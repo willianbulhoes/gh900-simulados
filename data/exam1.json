@@ -1,0 +1,786 @@
+{
+  "title": "Simulado GH-900 – Prova 1",
+  "duration_minutes": 90,
+  "questions": [
+    {
+      "id": 19,
+      "topic": "Git e controle de versão",
+      "q": "Qual é a diferença entre tag leve e tag anotada?",
+      "options": [
+        "Tags só existem no GitHub, não no Git",
+        "Ambas são iguais",
+        "Leve guarda mensagem; anotada é ponteiro",
+        "Anotada guarda mensagem/autor/data; leve é apenas um ponteiro"
+      ],
+      "answer": 3,
+      "explanation": "Tags anotadas incluem metadados (mensagem, autor, data); tags leves são referências simples a um commit."
+    },
+    {
+      "id": 10,
+      "topic": "Conceitos do GitHub",
+      "q": "Qual opção descreve corretamente 'star', 'watch' e 'fork'?",
+      "options": [
+        "Star acompanha notificações; Watch adiciona licença; Fork cria release",
+        "Star dá permissão de escrita; Watch cria branch; Fork cria issue",
+        "Star marca como favorito; Watch acompanha notificações; Fork cria cópia no seu perfil",
+        "Star cria cópia; Watch favorita; Fork envia commits"
+      ],
+      "answer": 2,
+      "explanation": "Star é favorito, Watch controla notificações de atividades, e Fork cria uma cópia do repositório na sua conta."
+    },
+    {
+      "id": 30,
+      "topic": "Colaboração e GitHub Flow",
+      "q": "Qual a diferença entre Discussions e Issues?",
+      "options": [
+        "Discussions: conversas, ideação e Q&A; Issues: rastreamento de trabalho e tarefas",
+        "Ambas são iguais",
+        "Issues são apenas para repositórios privados",
+        "Discussions substituem solicitação de pulls"
+      ],
+      "answer": 0,
+      "explanation": "Discussions são para conversas abertas; Issues são para tarefas rastreáveis."
+    },
+    {
+      "id": 6,
+      "topic": "Conceitos do GitHub",
+      "q": "Qual recurso do GitHub agrupa repositórios e usuários sob políticas e cobrança compartilhadas?",
+      "options": [
+        "Gists",
+        "Discussions",
+        "Forks",
+        "Organizações"
+      ],
+      "answer": 3,
+      "explanation": "Organizações (Organizations) agrupam repositórios e membros, aplicam políticas, SSO e controle centralizado."
+    },
+    {
+      "id": 29,
+      "topic": "Colaboração e GitHub Flow",
+      "q": "GitHub Projects é usado principalmente para quê?",
+      "options": [
+        "Rodar builds no Actions",
+        "Hospedar sites estáticos",
+        "Planejamento e rastreamento de trabalho (quadros, tabelas, automações)",
+        "Gerenciar licenças"
+      ],
+      "answer": 2,
+      "explanation": "Projects ajuda a planejar e acompanhar trabalho, com views de board/tabela e campos personalizados."
+    },
+    {
+      "id": 60,
+      "topic": "Packages e integração",
+      "q": "Para encontrar ações reutilizáveis para seus workflows, use:",
+      "options": [
+        "Projects",
+        "GitHub Marketplace",
+        "GitHub Gists",
+        "GitHub Pages"
+      ],
+      "answer": 1,
+      "explanation": "O Marketplace lista ações e ferramentas integráveis aos workflows."
+    },
+    {
+      "id": 58,
+      "topic": "Packages e integração",
+      "q": "GitHub Codespaces é:",
+      "options": [
+        "Um tipo de runner de Actions",
+        "Um gerenciador de issues",
+        "Um substituto para Git",
+        "Um ambiente de desenvolvimento hospedado na nuvem com VS Code"
+      ],
+      "answer": 3,
+      "explanation": "Codespaces fornece dev containers e VS Code na nuvem para desenvolver sem configurar localmente."
+    },
+    {
+      "id": 20,
+      "topic": "Git e controle de versão",
+      "q": "Para que serve o Git LFS (Large File Storage)?",
+      "options": [
+        "Rastrear arquivos grandes via ponteiros e armazená-los fora do repositório Git",
+        "Comprimir todos os arquivos automaticamente",
+        "Criar releases com binários",
+        "Apagar histórico antigo"
+      ],
+      "answer": 0,
+      "explanation": "Git LFS substitui arquivos grandes por ponteiros no repositório e guarda o conteúdo binário em armazenamento separado."
+    },
+    {
+      "id": 51,
+      "topic": "Packages e integração",
+      "q": "Qual gerenciador de pacotes é suportado pelo GitHub Packages?",
+      "options": [
+        "cargo",
+        "pip",
+        "composer",
+        "npm"
+      ],
+      "answer": 3,
+      "explanation": "GitHub Packages suporta npm, Maven, NuGet, RubyGems, Docker/OCI entre outros (pip/Composer/Cargo não nativos)."
+    },
+    {
+      "id": 12,
+      "topic": "Git e controle de versão",
+      "q": "Qual comando envia commits locais para o repositório remoto no GitHub?",
+      "options": [
+        "git clone",
+        "git fetch",
+        "git add",
+        "git push"
+      ],
+      "answer": 3,
+      "explanation": "'git push' envia commits para o remoto configurado (origin)."
+    },
+    {
+      "id": 39,
+      "topic": "Segurança e boas práticas",
+      "q": "Em planos Enterprise, SAML/SSO é usado para:",
+      "options": [
+        "Criar releases automaticamente",
+        "Centralizar autenticação e acesso via identidade corporativa",
+        "Desabilitar issues",
+        "Habilitar GitHub Pages"
+      ],
+      "answer": 1,
+      "explanation": "SSO/SAML integram identidade corporativa, controlando acesso a organizações e recursos."
+    },
+    {
+      "id": 53,
+      "topic": "Packages e integração",
+      "q": "Para publicar e instalar pacotes do GitHub Packages, normalmente usa-se:",
+      "options": [
+        "GITHUB_TOKEN ou Personal Access Token com escopos adequados",
+        "Cookies do navegador",
+        "SSH sem chave",
+        "Senha de usuário em texto plano"
+      ],
+      "answer": 0,
+      "explanation": "Autenticação é feita via GITHUB_TOKEN (em Actions) ou PAT com escopos (packages, read:packages)."
+    },
+    {
+      "id": 17,
+      "topic": "Git e controle de versão",
+      "q": "Qual comando traz atualizações do remoto e integra ao branch atual?",
+      "options": [
+        "git commit --amend",
+        "git tag",
+        "git stash pop",
+        "git pull"
+      ],
+      "answer": 3,
+      "explanation": "'git pull' = fetch + merge (por padrão) no branch atual."
+    },
+    {
+      "id": 47,
+      "topic": "GitHub Actions e automação",
+      "q": "Como acessar um secret chamado MY_TOKEN em um workflow?",
+      "options": [
+        "${{ github.token }}",
+        "${{ env.MY_TOKEN }}",
+        "${{ vars.MY_TOKEN }}",
+        "${{ secrets.MY_TOKEN }}"
+      ],
+      "answer": 3,
+      "explanation": "Secrets são expostos via contexto 'secrets', acessível como ${{ secrets.NOME }}."
+    },
+    {
+      "id": 48,
+      "topic": "GitHub Actions e automação",
+      "q": "Para guardar artefatos de build e baixá-los depois, use:",
+      "options": [
+        "actions/cache",
+        "actions/checkout",
+        "actions/upload-artifact e actions/download-artifact",
+        "actions/setup-python"
+      ],
+      "answer": 2,
+      "explanation": "Upload/download de artifacts permite compartilhar binários/logs entre jobs e após a execução."
+    },
+    {
+      "id": 34,
+      "topic": "Segurança e boas práticas",
+      "q": "Code scanning no GitHub identifica o quê?",
+      "options": [
+        "Apenas formatação de Markdown",
+        "Licenças incompatíveis",
+        "Vulnerabilidades e problemas de segurança no código (ex.: via CodeQL)",
+        "Erros de merge"
+      ],
+      "answer": 2,
+      "explanation": "Code scanning integra ferramentas (CodeQL, terceiros) para detectar falhas e antipadrões de segurança."
+    },
+    {
+      "id": 8,
+      "topic": "Conceitos do GitHub",
+      "q": "Onde é recomendado documentar diretrizes de contribuição (solicitação de pulls, padrões de código)?",
+      "options": [
+        "README.md",
+        "SECURITY.md",
+        "CONTRIBUTING.md",
+        "LICENSE"
+      ],
+      "answer": 2,
+      "explanation": "CONTRIBUTING.md descreve como contribuir, abrir issues/PRs e padrões de projeto."
+    },
+    {
+      "id": 25,
+      "topic": "Colaboração e GitHub Flow",
+      "q": "Qual estratégia de merge cria um único commit a partir de vários?",
+      "options": [
+        "Rebase merge",
+        "Squash merge",
+        "Merge commit",
+        "Fast-forward"
+      ],
+      "answer": 1,
+      "explanation": "Squash condensa commits do PR em um único commit na branch alvo."
+    },
+    {
+      "id": 11,
+      "topic": "Git e controle de versão",
+      "q": "Qual comando cria um novo branch local e muda para ele?",
+      "options": [
+        "git push -b feature",
+        "git init feature",
+        "git branch --switch feature",
+        "git checkout -b feature"
+      ],
+      "answer": 3,
+      "explanation": "'git checkout -b <nome>' (ou 'git switch -c') cria e troca para o novo branch."
+    },
+    {
+      "id": 36,
+      "topic": "Segurança e boas práticas",
+      "q": "Commits assinados (Verified badge) indicam o quê?",
+      "options": [
+        "Que o commit contém binários",
+        "Que o commit veio de um fork",
+        "Que o commit foi revertido",
+        "Autenticidade do autor via GPG/SSH, evitando impersonação"
+      ],
+      "answer": 3,
+      "explanation": "Assinaturas GPG/SSH comprovam a identidade do autor, exibindo 'Verified'."
+    },
+    {
+      "id": 26,
+      "topic": "Colaboração e GitHub Flow",
+      "q": "Para que servem templates de issue/solicitação de pull?",
+      "options": [
+        "Modificar a licença automaticamente",
+        "Configurar webhooks",
+        "Padronizar informações fornecidas por contribuidores",
+        "Acelerar builds no Actions"
+      ],
+      "answer": 2,
+      "explanation": "Templates garantem consistência nas descrições e dados exigidos ao abrir issues/PRs."
+    },
+    {
+      "id": 56,
+      "topic": "Packages e integração",
+      "q": "Webhooks no GitHub servem para:",
+      "options": [
+        "Notificar sistemas externos sobre eventos (push, PR etc.)",
+        "Criar PATs automaticamente",
+        "Assinar commits",
+        "Gerenciar gists"
+      ],
+      "answer": 0,
+      "explanation": "Webhooks enviam POSTs para URLs externas quando eventos ocorrem no repositório/organização."
+    },
+    {
+      "id": 57,
+      "topic": "Packages e integração",
+      "q": "Qual a diferença principal entre GitHub Apps e OAuth Apps?",
+      "options": [
+        "GitHub Apps têm permissões granulares e tokens de instalação; OAuth Apps atuam em nome do usuário",
+        "Não há diferenças",
+        "OAuth Apps suportam webhooks; GitHub Apps não",
+        "GitHub Apps só funcionam com repositórios privados"
+      ],
+      "answer": 0,
+      "explanation": "GitHub Apps usam permissões específicas por recurso e tokens de instalação; OAuth Apps usam escopos e tokens do usuário."
+    },
+    {
+      "id": 21,
+      "topic": "Colaboração e GitHub Flow",
+      "q": "Qual é a sequência típica do GitHub Flow?",
+      "options": [
+        "Criar branch → commits → abrir solicitação de pull → revisão/checagens → merge → deploy",
+        "Criar tag → abrir discussion → merge",
+        "Criar release → criar fork → merge",
+        "Commits direto na main → deploy → abrir issue"
+      ],
+      "answer": 0,
+      "explanation": "O fluxo recomendado: branch temático, PR com revisão/CI, merge na main e deploy contínuo."
+    },
+    {
+      "id": 52,
+      "topic": "Packages e integração",
+      "q": "Qual é o domínio do GitHub Container Registry?",
+      "options": [
+        "registry.github.com",
+        "cr.github.io",
+        "docker.pkg.github.com",
+        "ghcr.io"
+      ],
+      "answer": 3,
+      "explanation": "O registro de contêineres moderno usa ghcr.io (substitui docker.pkg.github.com)."
+    },
+    {
+      "id": 2,
+      "topic": "Conceitos do GitHub",
+      "q": "Qual é a finalidade principal de um fork em GitHub?",
+      "options": [
+        "Gerar um release com versionamento semântico",
+        "Criar um branch protegido dentro do mesmo repositório",
+        "Criar uma cópia independente do repositório para experimentar e contribuir",
+        "Clonar localmente o repositório para sua máquina"
+      ],
+      "answer": 2,
+      "explanation": "Um fork cria uma cópia do repositório na sua conta/organização, permitindo mudanças independentes e PRs de volta ao projeto original."
+    },
+    {
+      "id": 24,
+      "topic": "Colaboração e GitHub Flow",
+      "q": "Qual é a diferença de um Draft solicitação de pull?",
+      "options": [
+        "Apaga o branch automaticamente",
+        "Ignora todos os status checks",
+        "Indica trabalho em andamento e desabilita merge até marcar como pronto",
+        "É idêntico a um PR normal"
+      ],
+      "answer": 2,
+      "explanation": "Draft PR sinaliza que o trabalho ainda não está pronto e evita merge acidental."
+    },
+    {
+      "id": 50,
+      "topic": "GitHub Actions e automação",
+      "q": "Onde se define permissões do GITHUB_TOKEN dentro de um workflow?",
+      "options": [
+        "Em CODEOWNERS",
+        "Em README.md",
+        "Em .gitignore",
+        "No campo 'permissions:' do workflow"
+      ],
+      "answer": 3,
+      "explanation": "'permissions:' ajusta escopos (contents, packages, actions etc.) seguindo menor privilégio."
+    },
+    {
+      "id": 55,
+      "topic": "Packages e integração",
+      "q": "GitHub Pages serve para:",
+      "options": [
+        "Criar containers automaticamente",
+        "Hospedar sites estáticos diretamente de um repositório",
+        "Gerenciar permissões de organização",
+        "Executar pipelines de CI"
+      ],
+      "answer": 1,
+      "explanation": "Pages publica conteúdo estático (HTML/JS/CSS) a partir de branches/pastas."
+    },
+    {
+      "id": 38,
+      "topic": "Segurança e boas práticas",
+      "q": "Qual princípio é recomendado para concessão de permissões?",
+      "options": [
+        "Menor privilégio necessário",
+        "Permissões só para forks",
+        "Permissão total para todos",
+        "Desabilitar autenticação"
+      ],
+      "answer": 0,
+      "explanation": "Conceder apenas o mínimo necessário reduz riscos de abuso ou incidentes."
+    },
+    {
+      "id": 45,
+      "topic": "GitHub Actions e automação",
+      "q": "Para rodar múltiplas combinações (ex.: Node 16 e 18, Linux e Windows) use:",
+      "options": [
+        "env.files",
+        "strategy.matrix",
+        "runs-on: multi",
+        "permissions.matrix"
+      ],
+      "answer": 1,
+      "explanation": "A matriz permite expandir jobs em combinações de versões/SO."
+    },
+    {
+      "id": 23,
+      "topic": "Colaboração e GitHub Flow",
+      "q": "O que são status checks em um PR?",
+      "options": [
+        "Uma lista de issues vinculadas",
+        "Um tipo de branch protegido",
+        "Uma configuração de notificações",
+        "Resultados de pipelines/validações (ex.: CI) que precisam passar antes do merge"
+      ],
+      "answer": 3,
+      "explanation": "Status checks refletem testes/linters/builds, podendo ser obrigatórios para permitir o merge."
+    },
+    {
+      "id": 28,
+      "topic": "Colaboração e GitHub Flow",
+      "q": "O que são milestones?",
+      "options": [
+        "Templates de PR",
+        "Um recurso exclusivo de repositórios privados",
+        "Metas/entregas para agrupar issues e PRs por objetivo/data",
+        "Um tipo de runner do Actions"
+      ],
+      "answer": 2,
+      "explanation": "Milestones agrupam itens por meta ou período, úteis para releases e sprints."
+    },
+    {
+      "id": 44,
+      "topic": "GitHub Actions e automação",
+      "q": "No Actions, jobs e steps significam:",
+      "options": [
+        "Steps executam apenas scripts Python",
+        "Jobs são unidades de execução (máquina); steps são comandos dentro do job",
+        "Jobs são apenas para repositórios privados",
+        "Steps são máquinas; jobs são comandos"
+      ],
+      "answer": 1,
+      "explanation": "Um workflow tem jobs que executam em runners, e cada job contém steps (ações/comandos)."
+    },
+    {
+      "id": 7,
+      "topic": "Conceitos do GitHub",
+      "q": "Para que servem 'topics' em um repositório?",
+      "options": [
+        "Habilitar builds automatizados",
+        "Definir proprietários de código",
+        "Classificar e tornar o repositório mais descobrível",
+        "Controlar permissões de acesso"
+      ],
+      "answer": 2,
+      "explanation": "Topics são etiquetas que ajudam na descoberta e categorização de repositórios por temas/tecnologias."
+    },
+    {
+      "id": 13,
+      "topic": "Git e controle de versão",
+      "q": "Qual é uma boa prática para mensagens de commit?",
+      "options": [
+        "Usar apenas emojis sem texto",
+        "Incluir arquivos binários na mensagem",
+        "Usar voz imperativa e ser claro e conciso",
+        "Evitar qualquer descrição"
+      ],
+      "answer": 2,
+      "explanation": "Mensagens curtas, imperativas (ex.: 'Adiciona validação X') e descritivas facilitam revisão e histórico."
+    },
+    {
+      "id": 27,
+      "topic": "Colaboração e GitHub Flow",
+      "q": "Qual é a função de labels em issues/PRs?",
+      "options": [
+        "Criar tags de release",
+        "Controlar runners de Actions",
+        "Conceder permissões administrativas",
+        "Classificar e filtrar itens por categorias (ex.: bug, enhancement)"
+      ],
+      "answer": 3,
+      "explanation": "Labels ajudam a organizar e priorizar trabalho."
+    },
+    {
+      "id": 40,
+      "topic": "Segurança e boas práticas",
+      "q": "Branches protegidos são úteis para:",
+      "options": [
+        "Aumentar storage do repositório",
+        "Habilitar releases automáticos",
+        "Criar webhooks",
+        "Evitar commits diretos e exigir PRs com verificações"
+      ],
+      "answer": 3,
+      "explanation": "Proteção de branches impõe regras (cheks, reviews) e bloqueia pushes diretos."
+    },
+    {
+      "id": 49,
+      "topic": "GitHub Actions e automação",
+      "q": "Qual evento permite acionar manualmente um workflow com inputs?",
+      "options": [
+        "release",
+        "workflow_dispatch",
+        "repository_dispatch",
+        "push"
+      ],
+      "answer": 1,
+      "explanation": "'workflow_dispatch' cria um botão 'Run workflow' e permite inputs."
+    },
+    {
+      "id": 31,
+      "topic": "Segurança e boas práticas",
+      "q": "O que são Dependabot alerts?",
+      "options": [
+        "Mensagens de commit assinadas",
+        "Alertas de vulnerabilidades em dependências detectadas pelo GitHub",
+        "Falhas de runners de Actions",
+        "Notificações de merges pendentes"
+      ],
+      "answer": 1,
+      "explanation": "Alertas de segurança detectam dependências vulneráveis com CVEs conhecidos e sugerem versões corrigidas."
+    },
+    {
+      "id": 42,
+      "topic": "GitHub Actions e automação",
+      "q": "Qual evento aciona um workflow ao abrir/atualizar um solicitação de pull?",
+      "options": [
+        "workflow_dispatch",
+        "push",
+        "pull_request",
+        "schedule"
+      ],
+      "answer": 2,
+      "explanation": "O evento 'pull_request' dispara em atividades de PR."
+    },
+    {
+      "id": 37,
+      "topic": "Segurança e boas práticas",
+      "q": "Para documentar como reportar vulnerabilidades, use:",
+      "options": [
+        "CODEOWNERS",
+        "SECURITY.md",
+        "README.md",
+        "DOCKERFILE"
+      ],
+      "answer": 1,
+      "explanation": "SECURITY.md centraliza diretrizes para reporte responsável e contato."
+    },
+    {
+      "id": 9,
+      "topic": "Conceitos do GitHub",
+      "q": "O arquivo CODEOWNERS define o quê?",
+      "options": [
+        "Quem é automaticamente solicitado para revisar PRs em áreas específicas do código",
+        "A configuração de runners do Actions",
+        "A licença do projeto",
+        "Os secrets do repositório"
+      ],
+      "answer": 0,
+      "explanation": "CODEOWNERS mapeia caminhos de arquivos para times/usuários responsáveis por revisões."
+    },
+    {
+      "id": 35,
+      "topic": "Segurança e boas práticas",
+      "q": "Branch protection rules permitem o quê?",
+      "options": [
+        "Alterar a licença automaticamente",
+        "Tornar o repositório público",
+        "Exigir revisões/status checks antes do merge e bloquear force-push",
+        "Executar builds em runners self-hosted"
+      ],
+      "answer": 2,
+      "explanation": "Regras de proteção: exigem revisão, checagens obrigatórias, impedem deleções/force-push no branch."
+    },
+    {
+      "id": 14,
+      "topic": "Git e controle de versão",
+      "q": "Em Git, o que é HEAD?",
+      "options": [
+        "Um tag de release",
+        "Um hook de pré-commit",
+        "Um arquivo de configuração de licença",
+        "Aponta para o commit atual/branch check-out"
+      ],
+      "answer": 3,
+      "explanation": "HEAD referencia o commit/branch atual."
+    },
+    {
+      "id": 32,
+      "topic": "Segurança e boas práticas",
+      "q": "O que são Dependabot security updates?",
+      "options": [
+        "Pull requests automáticos sugerindo atualização para versões seguras",
+        "Uma configuração de webhook",
+        "Um relatório de auditoria de licenças",
+        "Um tipo de tag protegida"
+      ],
+      "answer": 0,
+      "explanation": "Dependabot pode abrir PRs para atualizar dependências vulneráveis para versões remediadas."
+    },
+    {
+      "id": 43,
+      "topic": "GitHub Actions e automação",
+      "q": "Qual a diferença entre GitHub-hosted runner e self-hosted runner?",
+      "options": [
+        "GitHub-hosted não suporta containers",
+        "Ambos são iguais",
+        "Self-hosted só funciona em repositórios públicos",
+        "GitHub-hosted é gerenciado pelo GitHub; self-hosted é infra do usuário"
+      ],
+      "answer": 3,
+      "explanation": "Runners hospedados pelo GitHub são escalados/atualizados automaticamente; self-hosted roda na sua infraestrutura."
+    },
+    {
+      "id": 18,
+      "topic": "Git e controle de versão",
+      "q": "Qual afirmativa descreve corretamente merge vs rebase?",
+      "options": [
+        "Merge reescreve histórico; rebase sempre cria merge commit",
+        "Merge só funciona em repositórios privados",
+        "Merge preserva o histórico; rebase reescreve o histórico para linearizar",
+        "Merge apaga commits; rebase cria tags"
+      ],
+      "answer": 2,
+      "explanation": "Merge integra historicamente os commits; rebase reaplica commits sobre outro base criando histórico linear."
+    },
+    {
+      "id": 16,
+      "topic": "Git e controle de versão",
+      "q": "Como desfazer um commit mantendo as mudanças na área de staging (index)?",
+      "options": [
+        "git pull --rebase",
+        "git reset --soft HEAD~1",
+        "git rm --cached .",
+        "git revert HEAD"
+      ],
+      "answer": 1,
+      "explanation": "'git reset --soft HEAD~1' remove o commit mais recente mantendo as alterações no staging. 'git revert' cria um novo commit inverso."
+    },
+    {
+      "id": 33,
+      "topic": "Segurança e boas práticas",
+      "q": "Secret scanning faz o quê?",
+      "options": [
+        "Detecta credenciais/tokens expostos em commits e PRs",
+        "Criptografa automaticamente variáveis de ambiente",
+        "Assina releases",
+        "Cria backups de repositórios"
+      ],
+      "answer": 0,
+      "explanation": "Secret scanning identifica padrões de segredos (tokens, chaves) e alerta para exposição."
+    },
+    {
+      "id": 54,
+      "topic": "Packages e integração",
+      "q": "Para versionar e disponibilizar binários do projeto, usa-se:",
+      "options": [
+        "Releases",
+        "Projects",
+        "Gists",
+        "Wiki"
+      ],
+      "answer": 0,
+      "explanation": "Releases permitem versionar, anexar binários e notas de versão."
+    },
+    {
+      "id": 22,
+      "topic": "Colaboração e GitHub Flow",
+      "q": "Onde você solicita revisão de código no GitHub?",
+      "options": [
+        "No solicitação de pull",
+        "Nos Releases",
+        "No Wiki",
+        "Na Issue"
+      ],
+      "answer": 0,
+      "explanation": "Solicitações de revisão são parte dos solicitação de pulls, onde você adiciona reviewers."
+    },
+    {
+      "id": 3,
+      "topic": "Conceitos do GitHub",
+      "q": "Ao tornar um repositório público vs privado, qual é a diferença?",
+      "options": [
+        "Público: apenas leitura; Privado: apenas escrita",
+        "Não há diferença; é apenas um rótulo",
+        "Público: exige autenticação; Privado: não exige",
+        "Público: visível a todos; Privado: visível apenas para quem tem permissão"
+      ],
+      "answer": 3,
+      "explanation": "Repositórios públicos são visíveis para qualquer pessoa; privados exigem permissão explícita para acesso."
+    },
+    {
+      "id": 59,
+      "topic": "Packages e integração",
+      "q": "Onde colocar templates de issues baseado em formulário (Issue Forms)?",
+      "options": [
+        "docs/",
+        "scripts/",
+        ".github/PULL_REQUEST_TEMPLATE/",
+        ".github/ISSUE_TEMPLATE/"
+      ],
+      "answer": 3,
+      "explanation": "Issue Forms usam YAML em .github/ISSUE_TEMPLATE/ para padronizar campos."
+    },
+    {
+      "id": 15,
+      "topic": "Git e controle de versão",
+      "q": "Qual arquivo é usado para ignorar arquivos/pastas do versionamento?",
+      "options": [
+        ".gitignore",
+        "README.md",
+        "SECURITY.md",
+        "CODEOWNERS"
+      ],
+      "answer": 0,
+      "explanation": "Arquivos listados em .gitignore não serão rastreados pelo Git."
+    },
+    {
+      "id": 4,
+      "topic": "Conceitos do GitHub",
+      "q": "Para que serve um 'template repository'?",
+      "options": [
+        "Para proteger branches contra force-push",
+        "Para guardar binários gerados por builds",
+        "Para criar novos repositórios com a mesma estrutura e arquivos do template",
+        "Para configurar webhooks automaticamente"
+      ],
+      "answer": 2,
+      "explanation": "Templates permitem iniciar novos repositórios reutilizando estrutura, arquivos e diretórios do projeto de referência."
+    },
+    {
+      "id": 41,
+      "topic": "GitHub Actions e automação",
+      "q": "Onde ficam os arquivos de workflow do GitHub Actions?",
+      "options": [
+        "github/actions/",
+        "actions/workflows/",
+        ".github/workflows/",
+        "ci/workflows/"
+      ],
+      "answer": 2,
+      "explanation": "Workflows YAML devem estar em .github/workflows/ para serem reconhecidos."
+    },
+    {
+      "id": 46,
+      "topic": "GitHub Actions e automação",
+      "q": "Qual ação ajuda a cachear dependências e acelerar builds?",
+      "options": [
+        "actions/checkout",
+        "actions/cache",
+        "actions/setup-node",
+        "actions/upload-artifact"
+      ],
+      "answer": 1,
+      "explanation": "'actions/cache' armazena dependências (ex.: npm, Maven) entre execuções."
+    },
+    {
+      "id": 5,
+      "topic": "Conceitos do GitHub",
+      "q": "Onde você altera o 'default branch' de um repositório no GitHub?",
+      "options": [
+        "Em solicitação de pulls → Merge settings",
+        "Em Insights → Community",
+        "Em Actions → Runners",
+        "Em Settings → Branches"
+      ],
+      "answer": 3,
+      "explanation": "O branch padrão é configurado em Settings → Branches."
+    },
+    {
+      "id": 1,
+      "topic": "Conceitos do GitHub",
+      "q": "Qual arquivo é recomendado para descrever o projeto, objetivos e instruções de uso?",
+      "options": [
+        "CONTRIBUTING.md",
+        "README.md",
+        "CODEOWNERS",
+        "LICENSE"
+      ],
+      "answer": 1,
+      "explanation": "O arquivo README.md é o ponto de entrada padrão para apresentar o projeto, guias rápidos e links úteis. LICENSE declara a licença, CONTRIBUTING.md orienta contribuições e CODEOWNERS define responsáveis por revisões."
+    }
+  ]
+}
