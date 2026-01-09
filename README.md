@@ -38,10 +38,12 @@ VS Code (Live Server): instale a extensão "Live Server" e clique em "Go Live" c
 │  ├─ exam1.html
 │  ├─ exam2.html
 │  └─ exam3.html
+│  └─ examXPTO.html
 ├─ data/
 │  ├─ exam1.json
 │  ├─ exam2.json
 │  └─ exam3.json
+│  └─ examXPTO.json
 └─ assets/
    ├─ app.js
    └─ style.css
@@ -51,6 +53,15 @@ VS Code (Live Server): instale a extensão "Live Server" e clique em "Go Live" c
 - As provas cobrem: **Conceitos do GitHub**, **Git**, **Colaboração & GitHub Flow**, **Segurança**, **GitHub Actions** e **Packages/Integrações**.
 - O conteúdo está alinhado ao escopo de fundamentos e boas práticas.
 - Todos os gabaritos exibem **explicações detalhadas** após a entrega ou via modo gabarito.
+
+## Domínios cobertos
+- Introdução ao Git e GitHub (22%)
+- Trabalhando com repositórios GitHub (8%)
+- Recursos de colaboração (30%)
+- Desenvolvimento Moderno (13%)
+- Gestão de Projetos (7%)
+- Privacidade, Segurança e Administração (10%)
+- Benefícios da Comunidade GitHub (10%)
 
 ## Manutenção
 - Recomenda-se manter um `.gitignore` para evitar subir caches de IDE (ex.: `.vs/`) e artefatos de sistema.
