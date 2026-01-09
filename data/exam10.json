@@ -1,0 +1,170 @@
+{
+  "exam": {
+    "id": "exam10",
+    "title": "Simulado GH-900 - Prova 10",
+    "duration_minutes": 90,
+    "pass_score": 70,
+    "questions": [
+      {
+        "id": 1,
+        "domain": "Introdução ao Git e GitHub (22%)",
+        "type": "single",
+        "question_pt": "Qual comando exibe diferenças entre working directory e index?",
+        "options": [
+          "A) git diff",
+          "B) git status",
+          "C) git log",
+          "D) git reset"
+        ],
+        "correct": [
+          "A"
+        ],
+        "explanation_pt": "'git diff' mostra diferenças não staged; com '--cached' compara o index."
+      },
+      {
+        "id": 2,
+        "domain": "Trabalhando com repositórios GitHub (8%)",
+        "type": "single",
+        "question_pt": "Como excluir um arquivo do histórico futuro sem apagar commits antigos?",
+        "options": [
+          "A) Adicionar ao .gitignore",
+          "B) Reescrever todo histórico",
+          "C) Apagar o repositório",
+          "D) Não há solução"
+        ],
+        "correct": [
+          "A"
+        ],
+        "explanation_pt": "Adicionar ao .gitignore evita novos commits do arquivo (não remove do passado)."
+      },
+      {
+        "id": 3,
+        "domain": "Recursos de colaboração (30%)",
+        "type": "single",
+        "question_pt": "Em PRs, o que são 'status checks'?",
+        "options": [
+          "A) Comentários de usuários",
+          "B) Resultados de CI/CD e validações que devem passar",
+          "C) Labels automáticos",
+          "D) Sugestões de revisão"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "Checks representam pipelines/testes/validações; podem ser exigidos para merge."
+      },
+      {
+        "id": 4,
+        "domain": "Desenvolvimento Moderno (13%)",
+        "type": "single",
+        "question_pt": "Qual recurso acelera builds ao reutilizar dependências baixadas?",
+        "options": [
+          "A) actions/cache",
+          "B) actions/setup-python",
+          "C) actions/upload-artifact",
+          "D) actions/checkout"
+        ],
+        "correct": [
+          "A"
+        ],
+        "explanation_pt": "'actions/cache' armazena dependências entre execuções, reduzindo tempo."
+      },
+      {
+        "id": 5,
+        "domain": "Privacidade, Segurança e Administração (10%)",
+        "type": "single",
+        "question_pt": "Qual prática reduz risco de shadow IT em organizações GitHub?",
+        "options": [
+          "A) Permitir apps sem revisão",
+          "B) Usar políticas de OAuth app approval e restringir self-hosted runners",
+          "C) Compartilhar tokens entre equipes",
+          "D) Desativar logs"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "Aprovação de apps OAuth e políticas de runners evitam uso não autorizado."
+      },
+      {
+        "id": 6,
+        "domain": "Gestão de Projetos (7%)",
+        "type": "single",
+        "question_pt": "Milestones vs Projects: qual diferença principal?",
+        "options": [
+          "A) Não há diferença",
+          "B) Milestones agrupam issues/PRs por metas; Projects fornecem boards/views e campos",
+          "C) Milestones criam releases; Projects criam forks",
+          "D) Milestones são só para Wiki"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "Milestones focam metas/entregas; Projects oferecem gestão e visualização flexível."
+      },
+      {
+        "id": 7,
+        "domain": "Benefícios da Comunidade GitHub (10%)",
+        "type": "single",
+        "question_pt": "Como aumentar engajamento da comunidade no repositório?",
+        "options": [
+          "A) Adicionar 'good first issue' e 'help wanted' em tarefas apropriadas",
+          "B) Fechar PRs sem ler",
+          "C) Remover README",
+          "D) Desativar notificações"
+        ],
+        "correct": [
+          "A"
+        ],
+        "explanation_pt": "Labels como 'good first issue' convidam novos contribuidores a participar."
+      },
+      {
+        "id": 8,
+        "domain": "Introdução ao Git e GitHub (22%)",
+        "type": "single",
+        "question_pt": "Qual comando desfaz último commit mantendo mudanças no working directory?",
+        "options": [
+          "A) git revert HEAD",
+          "B) git reset --soft HEAD~1",
+          "C) git reset --hard HEAD~1",
+          "D) git checkout HEAD"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "'reset --soft' move HEAD preservando alterações staged; sem '--soft', usar '--mixed' para working dir."
+      },
+      {
+        "id": 9,
+        "domain": "Recursos de colaboração (30%)",
+        "type": "single",
+        "question_pt": "Qual opção de merge cria um commit de merge explícito mesmo em histórico linear?",
+        "options": [
+          "A) Merge commit",
+          "B) Squash merge",
+          "C) Rebase and merge",
+          "D) Fast-forward"
+        ],
+        "correct": [
+          "A"
+        ],
+        "explanation_pt": "'Merge commit' cria um commit específico juntando históricos."
+      },
+      {
+        "id": 10,
+        "domain": "Desenvolvimento Moderno (13%)",
+        "type": "single",
+        "question_pt": "Como programar execução noturna diária de workflow?",
+        "options": [
+          "A) schedule com cron (ex.: '0 0 * * *')",
+          "B) push",
+          "C) workflow_dispatch",
+          "D) release"
+        ],
+        "correct": [
+          "A"
+        ],
+        "explanation_pt": "'schedule' usa sintaxe cron para rodar periodicamente."
+      }
+    ]
+  }
+}

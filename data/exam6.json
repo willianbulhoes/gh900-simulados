@@ -1,0 +1,170 @@
+{
+  "exam": {
+    "id": "exam6",
+    "title": "Simulado GH-900 - Prova 6",
+    "duration_minutes": 90,
+    "pass_score": 70,
+    "questions": [
+      {
+        "id": 1,
+        "domain": "Desenvolvimento Moderno (13%)",
+        "type": "single",
+        "question_pt": "Qual bloco de um job no Actions define passos executados?",
+        "options": [
+          "A) steps: [...]",
+          "B) env: [...]",
+          "C) on: [...]",
+          "D) uses: [...]"
+        ],
+        "correct": [
+          "A"
+        ],
+        "explanation_pt": "Dentro de cada job, 'steps' lista comandos/ações executadas."
+      },
+      {
+        "id": 2,
+        "domain": "Introdução ao Git e GitHub (22%)",
+        "type": "single",
+        "question_pt": "Para mesclar mudanças de uma branch feature em main, qual sequência é correta?",
+        "options": [
+          "A) Criar PR e realizar merge após aprovação",
+          "B) Forçar push em main",
+          "C) Reescrever histórico de main sem revisão",
+          "D) Comitar direto em main"
+        ],
+        "correct": [
+          "A"
+        ],
+        "explanation_pt": "Fluxo recomendado: PR → revisão → merge."
+      },
+      {
+        "id": 3,
+        "domain": "Trabalhando com repositórios GitHub (8%)",
+        "type": "single",
+        "question_pt": "Qual arquivo ignora arquivos/pastas no versionamento?",
+        "options": [
+          "A) .gitignore",
+          "B) .github/IGNORE",
+          "C) README.md",
+          "D) LICENSE"
+        ],
+        "correct": [
+          "A"
+        ],
+        "explanation_pt": "Use .gitignore para excluir arquivos do controle de versão."
+      },
+      {
+        "id": 4,
+        "domain": "Recursos de colaboração (30%)",
+        "type": "single",
+        "question_pt": "Qual é o propósito de 'Draft pull request'?",
+        "options": [
+          "A) Impedir completamente revisões",
+          "B) Indicar trabalho em andamento sem prontidão para merge",
+          "C) Forçar builds mais rápidos",
+          "D) Tornar PR privada"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "PR em rascunho comunica WIP; pode receber feedback antes de finalizar."
+      },
+      {
+        "id": 5,
+        "domain": "Privacidade, Segurança e Administração (10%)",
+        "type": "single",
+        "question_pt": "Secret scanning do GitHub ajuda a…",
+        "options": [
+          "A) Encontrar segredos expostos em commits",
+          "B) Gerenciar milestones",
+          "C) Escrever documentação",
+          "D) Otimizar cache"
+        ],
+        "correct": [
+          "A"
+        ],
+        "explanation_pt": "Secret scanning detecta tokens/chaves expostas e alerta para mitigação."
+      },
+      {
+        "id": 6,
+        "domain": "Gestão de Projetos (7%)",
+        "type": "single",
+        "question_pt": "No GitHub Projects (novo), como você liga issues a itens do projeto?",
+        "options": [
+          "A) Não é possível",
+          "B) Adicionando a issue ao projeto via sidebar ou automações",
+          "C) Via Wiki",
+          "D) Apenas por milestones"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "Você pode adicionar issues a projetos pelo painel lateral ou criar automações."
+      },
+      {
+        "id": 7,
+        "domain": "Benefícios da Comunidade GitHub (10%)",
+        "type": "single",
+        "question_pt": "Qual atitude é recomendada ao contribuir em projetos open source?",
+        "options": [
+          "A) Ignorar discussões de design",
+          "B) Ler o CONTRIBUTING.md e abrir uma issue antes da PR",
+          "C) Fazer push direto para main",
+          "D) Fechar issues antigas sem contexto"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "Seguir o guia de contribuição e alinhar via issue evita retrabalho."
+      },
+      {
+        "id": 8,
+        "domain": "Introdução ao Git e GitHub (22%)",
+        "type": "single",
+        "question_pt": "O que 'git pull' faz por padrão?",
+        "options": [
+          "A) Apenas baixa commits sem mesclar",
+          "B) Busca e mescla (fetch + merge) do remoto na sua branch atual",
+          "C) Apaga a branch local",
+          "D) Cria um tag"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "'git pull' equivale a fetch + merge na branch atual."
+      },
+      {
+        "id": 9,
+        "domain": "Recursos de colaboração (30%)",
+        "type": "single",
+        "question_pt": "Qual estratégia evita conflitos em PRs concorrentes?",
+        "options": [
+          "A) Mudar diretamente arquivos na main",
+          "B) Rebase ou merge frequente a partir da main na branch de feature",
+          "C) Evitar commits frequentes",
+          "D) Desativar revisões"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "Atualizar a branch de feature com mudanças de main reduz conflitos."
+      },
+      {
+        "id": 10,
+        "domain": "Desenvolvimento Moderno (13%)",
+        "type": "single",
+        "question_pt": "Para executar testes Node.js no Actions, qual ação oficial é comumente usada para setar a versão?",
+        "options": [
+          "A) actions/cache",
+          "B) actions/setup-node",
+          "C) actions/checkout",
+          "D) actions/upload-artifact"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "'actions/setup-node' configura a versão do Node.js para o job."
+      }
+    ]
+  }
+}
