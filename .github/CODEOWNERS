@@ -1,0 +1,10 @@
+# Padrões e responsáveis por revisão
+# Formato: caminho  @owner
+
+# Dono padrão do repositório (todas as mudanças requerem revisão de @willianbulhoes)
+* @willianbulhoes
+
+# Exemplos de granularidade (descomente se necessário)
+# /assets/* @willianbulhoes
+# /data/*   @willianbulhoes
+# /exams/*  @willianbulhoes
