@@ -1,0 +1,170 @@
+{
+  "exam": {
+    "id": "exam5",
+    "title": "Simulado GH-900 - Prova 5",
+    "duration_minutes": 90,
+    "pass_score": 70,
+    "questions": [
+      {
+        "id": 1,
+        "domain": "Introdução ao Git e GitHub (22%)",
+        "type": "single",
+        "question_pt": "Qual é o objetivo principal de 'git clone'?",
+        "options": [
+          "A) Criar um branch novo",
+          "B) Copiar um repositório remoto para local",
+          "C) Apagar um repositório",
+          "D) Enviar alterações para remoto"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "'git clone' cria uma cópia local de um repositório remoto, incluindo histórico."
+      },
+      {
+        "id": 2,
+        "domain": "Trabalhando com repositórios GitHub (8%)",
+        "type": "single",
+        "question_pt": "Onde você configura a visibilidade (público/privado) do repositório?",
+        "options": [
+          "A) Em .git/config",
+          "B) Na aba Settings do repositório",
+          "C) Em Pull requests",
+          "D) Em Wiki"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "A visibilidade é definida nas configurações do repositório no GitHub (Settings)."
+      },
+      {
+        "id": 3,
+        "domain": "Recursos de colaboração (30%)",
+        "type": "single",
+        "question_pt": "Para propor mudanças sem afetar a branch principal, você deve…",
+        "options": [
+          "A) Fazer commits direto na main",
+          "B) Criar um branch e abrir uma PR",
+          "C) Forçar push na main",
+          "D) Abrir uma issue sem código"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "Branch → PR é o fluxo recomendado (GitHub Flow) para colaboração segura."
+      },
+      {
+        "id": 4,
+        "domain": "Desenvolvimento Moderno (13%)",
+        "type": "single",
+        "question_pt": "Qual seção do arquivo de workflow define o ambiente de execução (SO, versões)?",
+        "options": [
+          "A) jobs.<nome>.runs-on",
+          "B) env",
+          "C) concurrency",
+          "D) outputs"
+        ],
+        "correct": [
+          "A"
+        ],
+        "explanation_pt": "'runs-on' especifica o runner (ex.: ubuntu-latest)."
+      },
+      {
+        "id": 5,
+        "domain": "Privacidade, Segurança e Administração (10%)",
+        "type": "single",
+        "question_pt": "Qual funcionalidade identifica dependências vulneráveis automaticamente?",
+        "options": [
+          "A) Wiki",
+          "B) Dependabot alerts",
+          "C) Projects",
+          "D) Actions cache"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "Dependabot alerta sobre vulnerabilidades em dependências e pode abrir PRs de atualização."
+      },
+      {
+        "id": 6,
+        "domain": "Gestão de Projetos (7%)",
+        "type": "single",
+        "question_pt": "Como acompanhar progresso de issues em um quadro Kanban moderno do GitHub Projects (beta)?",
+        "options": [
+          "A) Usar milestones obrigatoriamente",
+          "B) Configurar views com filtros e campos (custom fields)",
+          "C) Só via releases",
+          "D) Não é possível"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "No novo Projects, você cria views, adiciona campos e filtra para acompanhar progresso."
+      },
+      {
+        "id": 7,
+        "domain": "Benefícios da Comunidade GitHub (10%)",
+        "type": "single",
+        "question_pt": "Qual é um benefício direto de participar de Discussões (Discussions) em repositórios?",
+        "options": [
+          "A) Reduz o histórico de commits",
+          "B) Centraliza perguntas/ideias, evitando issues desnecessárias",
+          "C) Apaga PRs automaticamente",
+          "D) Força merges"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "Discussions é canal apropriado para perguntas e ideias, evitando inflar issues."
+      },
+      {
+        "id": 8,
+        "domain": "Introdução ao Git e GitHub (22%)",
+        "type": "single",
+        "question_pt": "Qual comando envia commits locais para o remoto?",
+        "options": [
+          "A) git pull",
+          "B) git push",
+          "C) git commit",
+          "D) git status"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "'git push' publica as mudanças da sua branch local no remoto."
+      },
+      {
+        "id": 9,
+        "domain": "Recursos de colaboração (30%)",
+        "type": "single",
+        "question_pt": "Ao abrir uma PR de um fork, o que costuma ser necessário para testes de Actions?",
+        "options": [
+          "A) Nada; sempre roda automaticamente",
+          "B) Manter secrets acessíveis ao fork",
+          "C) Usar 'pull_request' como gatilho e evitar expor secrets",
+          "D) Desabilitar Actions"
+        ],
+        "correct": [
+          "C"
+        ],
+        "explanation_pt": "Workflows com 'pull_request' rodam em contexto do base repo e têm restrições de secrets por segurança."
+      },
+      {
+        "id": 10,
+        "domain": "Privacidade, Segurança e Administração (10%)",
+        "type": "single",
+        "question_pt": "Qual medida de administração melhora segurança organizacional?",
+        "options": [
+          "A) Permitir senhas fracas",
+          "B) Exigir 2FA para membros da organização",
+          "C) Desativar logs",
+          "D) Remover equipes"
+        ],
+        "correct": [
+          "B"
+        ],
+        "explanation_pt": "Exigir autenticação de dois fatores fortalece a segurança da organização."
+      }
+    ]
+  }
+}

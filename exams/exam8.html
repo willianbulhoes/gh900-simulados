@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simulado GH-900 - Prova 8</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <main>
+    <h1>Prova 8</h1>
+    <div id="exam-container"></div>
+  </main>
+  <script>
+    async function loadExam() {
+      const res = await fetch('../data/exam8.json');
+      const data = await res.json();
+      const container = document.getElementById('exam-container');
+      const exam = data.exam;
+      const info = document.createElement('p');
+      info.textContent = 'Duração: ' + exam.duration_minutes + ' min | Nota de corte: ' + exam.pass_score + '%';
+      container.appendChild(info);
+      exam.questions.forEach(function(q) {
+        const div = document.createElement('section');
+        div.style.border = '1px solid #ddd';
+        div.style.padding = '10px';
+        div.style.margin = '10px 0';
+        const h = document.createElement('h3');
+        h.textContent = 'Q' + q.id + ' — [' + q.domain + ']';
+        div.appendChild(h);
+        const p = document.createElement('p');
+        p.textContent = q.question_pt;
+        div.appendChild(p);
+        const ol = document.createElement('ol');
+        var letters = ['A','B','C','D','E','F'];
+        for (var idx=0; idx<q.options.length; idx++) {
+          const li = document.createElement('li');
+          li.textContent = letters[idx] + ') ' + q.options[idx];
+          ol.appendChild(li);
+        }
+        div.appendChild(ol);
+        const details = document.createElement('details');
+        const sum = document.createElement('summary');
+        sum.textContent = 'Gabarito & explicação';
+        details.appendChild(sum);
+        const ans = document.createElement('p');
+        ans.textContent = 'Resposta correta: ' + q.correct.join(', ');
+        details.appendChild(ans);
+        const exp = document.createElement('p');
+        exp.textContent = q.explanation_pt;
+        details.appendChild(exp);
+        div.appendChild(details);
+        container.appendChild(div);
+      });
+    }
+    loadExam();
+  </script>
+</body>
+</html>
