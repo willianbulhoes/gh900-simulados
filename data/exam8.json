@@ -1,170 +1,136 @@
 {
-  "exam": {
-    "id": "exam8",
-    "title": "Simulado GH-900 - Prova 8",
-    "duration_minutes": 90,
-    "pass_score": 70,
-    "questions": [
-      {
-        "id": 1,
-        "domain": "Introdução ao Git e GitHub (22%)",
-        "type": "single",
-        "question_pt": "O que 'git commit -m' faz?",
-        "options": [
-          "A) Envia alterações para o remoto",
-          "B) Registra alterações no histórico local com mensagem",
-          "C) Cria nova branch",
-          "D) Lista branches"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Commit salva as mudanças localmente com uma mensagem descritiva."
-      },
-      {
-        "id": 2,
-        "domain": "Trabalhando com repositórios GitHub (8%)",
-        "type": "single",
-        "question_pt": "Como editar um arquivo direto no GitHub sem clonar?",
-        "options": [
-          "A) Não é possível",
-          "B) Usar o editor via web na interface do arquivo",
-          "C) Via Wiki apenas",
-          "D) Via Releases"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "O GitHub permite editar arquivos diretamente pela UI com commit via web."
-      },
-      {
-        "id": 3,
-        "domain": "Recursos de colaboração (30%)",
-        "type": "single",
-        "question_pt": "Qual é um bom uso de labels em issues?",
-        "options": [
-          "A) Confundir o time",
-          "B) Classificar por tipo (bug, feature), prioridade, área",
-          "C) Remover contexto",
-          "D) Travar discussões"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Labels bem definidas melhoram triagem e priorização."
-      },
-      {
-        "id": 4,
-        "domain": "Desenvolvimento Moderno (13%)",
-        "type": "single",
-        "question_pt": "Como compartilhar artefatos de build entre jobs?",
-        "options": [
-          "A) Não é possível",
-          "B) Usando actions/upload-artifact e download-artifact",
-          "C) Editando README",
-          "D) Via Wiki"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Upload/download-artifact permite persistir e reutilizar artefatos entre jobs."
-      },
-      {
-        "id": 5,
-        "domain": "Privacidade, Segurança e Administração (10%)",
-        "type": "single",
-        "question_pt": "Qual prática reduz risco de exposição de segredos em Actions?",
-        "options": [
-          "A) Comitar segredos no repositório",
-          "B) Usar GitHub Secrets e mascaramento de logs",
-          "C) Colocar segredos em README",
-          "D) Enviar por PR"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Armazene segredos em 'Secrets' e evite exibi-los em logs."
-      },
-      {
-        "id": 6,
-        "domain": "Gestão de Projetos (7%)",
-        "type": "single",
-        "question_pt": "Milestones ajudam a…",
-        "options": [
-          "A) Automatizar merges",
-          "B) Agrupar issues/PRs por entregas/versões planejadas",
-          "C) Criar branches automaticamente",
-          "D) Forçar testes"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Milestones organizam objetivos e agrupam issues/PRs com prazos."
-      },
-      {
-        "id": 7,
-        "domain": "Benefícios da Comunidade GitHub (10%)",
-        "type": "single",
-        "question_pt": "Qual benefício de contribuir com documentação?",
-        "options": [
-          "A) Reduz usabilidade",
-          "B) Facilita onboarding e aumenta adoção do projeto",
-          "C) Inviabiliza releases",
-          "D) Quebra CI"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Documentação boa acelera onboarding e uso do projeto."
-      },
-      {
-        "id": 8,
-        "domain": "Introdução ao Git e GitHub (22%)",
-        "type": "single",
-        "question_pt": "Qual comando exibe histórico de commits?",
-        "options": [
-          "A) git history",
-          "B) git log",
-          "C) git status",
-          "D) git show-all"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "'git log' lista commits com mensagens e metadados."
-      },
-      {
-        "id": 9,
-        "domain": "Recursos de colaboração (30%)",
-        "type": "single",
-        "question_pt": "Para relacionar uma PR a uma issue, você pode…",
-        "options": [
-          "A) Ignorar a issue",
-          "B) Referenciar a issue na descrição (ex.: Fixes #123)",
-          "C) Fechar manualmente sem referência",
-          "D) Alterar visibilidade do repositório"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Usar palavras-chave como 'Fixes #123' fecha a issue ao merge da PR."
-      },
-      {
-        "id": 10,
-        "domain": "Desenvolvimento Moderno (13%)",
-        "type": "single",
-        "question_pt": "Como evitar que dois workflows concorram pelo mesmo recurso?",
-        "options": [
-          "A) Usar 'concurrency' para agrupar execuções e cancelar anteriores",
-          "B) Remover testes",
-          "C) Executar tudo em paralelo sempre",
-          "D) Desativar Actions"
-        ],
-        "correct": [
-          "A"
-        ],
-        "explanation_pt": "'concurrency' ajuda a evitar execuções paralelas conflitantes."
-      }
-    ]
-  }
+  "title": "Simulado GH-900 - Prova 8",
+  "duration_minutes": 90,
+  "questions": [
+    {
+      "options": [
+        "A) Envia alterações para o remoto",
+        "B) Registra alterações no histórico local com mensagem",
+        "C) Cria nova branch",
+        "D) Lista branches"
+      ],
+      "id": 1,
+      "q": "O que 'git commit -m' faz?",
+      "answer": 1,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "explanation": "Commit salva as mudanças localmente com uma mensagem descritiva."
+    },
+    {
+      "options": [
+        "A) Não é possível",
+        "B) Usar o editor via web na interface do arquivo",
+        "C) Via Wiki apenas",
+        "D) Via Releases"
+      ],
+      "id": 2,
+      "q": "Como editar um arquivo direto no GitHub sem clonar?",
+      "answer": 1,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "explanation": "O GitHub permite editar arquivos diretamente pela UI com commit via web."
+    },
+    {
+      "options": [
+        "A) Confundir o time",
+        "B) Classificar por tipo (bug, feature), prioridade, área",
+        "C) Remover contexto",
+        "D) Travar discussões"
+      ],
+      "id": 3,
+      "q": "Qual é um bom uso de labels em issues?",
+      "answer": 1,
+      "topic": "Recursos de colaboração (30%)",
+      "explanation": "Labels bem definidas melhoram triagem e priorização."
+    },
+    {
+      "options": [
+        "A) Não é possível",
+        "B) Usando actions/upload-artifact e download-artifact",
+        "C) Editando README",
+        "D) Via Wiki"
+      ],
+      "id": 4,
+      "q": "Como compartilhar artefatos de build entre jobs?",
+      "answer": 1,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "explanation": "Upload/download-artifact permite persistir e reutilizar artefatos entre jobs."
+    },
+    {
+      "options": [
+        "A) Comitar segredos no repositório",
+        "B) Usar GitHub Secrets e mascaramento de logs",
+        "C) Colocar segredos em README",
+        "D) Enviar por PR"
+      ],
+      "id": 5,
+      "q": "Qual prática reduz risco de exposição de segredos em Actions?",
+      "answer": 1,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "explanation": "Armazene segredos em 'Secrets' e evite exibi-los em logs."
+    },
+    {
+      "options": [
+        "A) Automatizar merges",
+        "B) Agrupar issues/PRs por entregas/versões planejadas",
+        "C) Criar branches automaticamente",
+        "D) Forçar testes"
+      ],
+      "id": 6,
+      "q": "Milestones ajudam a…",
+      "answer": 1,
+      "topic": "Gestão de Projetos (7%)",
+      "explanation": "Milestones organizam objetivos e agrupam issues/PRs com prazos."
+    },
+    {
+      "options": [
+        "A) Reduz usabilidade",
+        "B) Facilita onboarding e aumenta adoção do projeto",
+        "C) Inviabiliza releases",
+        "D) Quebra CI"
+      ],
+      "id": 7,
+      "q": "Qual benefício de contribuir com documentação?",
+      "answer": 1,
+      "topic": "Benefícios da Comunidade GitHub (10%)",
+      "explanation": "Documentação boa acelera onboarding e uso do projeto."
+    },
+    {
+      "options": [
+        "A) git history",
+        "B) git log",
+        "C) git status",
+        "D) git show-all"
+      ],
+      "id": 8,
+      "q": "Qual comando exibe histórico de commits?",
+      "answer": 1,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "explanation": "'git log' lista commits com mensagens e metadados."
+    },
+    {
+      "options": [
+        "A) Ignorar a issue",
+        "B) Referenciar a issue na descrição (ex.: Fixes #123)",
+        "C) Fechar manualmente sem referência",
+        "D) Alterar visibilidade do repositório"
+      ],
+      "id": 9,
+      "q": "Para relacionar uma PR a uma issue, você pode…",
+      "answer": 1,
+      "topic": "Recursos de colaboração (30%)",
+      "explanation": "Usar palavras-chave como 'Fixes #123' fecha a issue ao merge da PR."
+    },
+    {
+      "options": [
+        "A) Usar 'concurrency' para agrupar execuções e cancelar anteriores",
+        "B) Remover testes",
+        "C) Executar tudo em paralelo sempre",
+        "D) Desativar Actions"
+      ],
+      "id": 10,
+      "q": "Como evitar que dois workflows concorram pelo mesmo recurso?",
+      "answer": 0,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "explanation": "'concurrency' ajuda a evitar execuções paralelas conflitantes."
+    }
+  ]
 }

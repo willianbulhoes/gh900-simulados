@@ -1,170 +1,136 @@
 {
-  "exam": {
-    "id": "exam7",
-    "title": "Simulado GH-900 - Prova 7",
-    "duration_minutes": 90,
-    "pass_score": 70,
-    "questions": [
-      {
-        "id": 1,
-        "domain": "Introdução ao Git e GitHub (22%)",
-        "type": "single",
-        "question_pt": "Qual comando lista o estado atual do working directory e staging area?",
-        "options": [
-          "A) git status",
-          "B) git log",
-          "C) git diff",
-          "D) git branch"
-        ],
-        "correct": [
-          "A"
-        ],
-        "explanation_pt": "'git status' mostra arquivos modificados, adicionados e pendentes de commit."
-      },
-      {
-        "id": 2,
-        "domain": "Trabalhando com repositórios GitHub (8%)",
-        "type": "single",
-        "question_pt": "Como restringir quem pode fazer push na branch main?",
-        "options": [
-          "A) Via labels",
-          "B) Via branch protection exigindo PRs e permissões adequadas",
-          "C) Via README",
-          "D) Via Projects"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Proteção de branch + permissões impedem push direto e exigem PRs com revisão."
-      },
-      {
-        "id": 3,
-        "domain": "Recursos de colaboração (30%)",
-        "type": "single",
-        "question_pt": "Qual é o benefício de revisões obrigatórias (Required reviews) em PRs?",
-        "options": [
-          "A) Diminui qualidade",
-          "B) Garante avaliação por pares antes do merge",
-          "C) Impede automação",
-          "D) Substitui testes"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Revisões obrigatórias elevam a qualidade e reduzem riscos."
-      },
-      {
-        "id": 4,
-        "domain": "Desenvolvimento Moderno (13%)",
-        "type": "single",
-        "question_pt": "Qual é a função do 'actions/checkout'?",
-        "options": [
-          "A) Instalar dependências",
-          "B) Clonar o repositório na workspace do runner",
-          "C) Publicar artefatos",
-          "D) Configurar variáveis"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "'actions/checkout' traz o código para o ambiente do job."
-      },
-      {
-        "id": 5,
-        "domain": "Privacidade, Segurança e Administração (10%)",
-        "type": "single",
-        "question_pt": "Qual recurso ajuda a visualizar grafo de dependências e alertas correlatos?",
-        "options": [
-          "A) Dependency graph",
-          "B) Releases",
-          "C) Wiki",
-          "D) Tags"
-        ],
-        "correct": [
-          "A"
-        ],
-        "explanation_pt": "O dependency graph mostra dependências e funciona com alerts do Dependabot."
-      },
-      {
-        "id": 6,
-        "domain": "Gestão de Projetos (7%)",
-        "type": "single",
-        "question_pt": "Em Projects (novo), 'fields' servem para…",
-        "options": [
-          "A) Configurar segredos",
-          "B) Adicionar metadados como prioridade, status, pontuação",
-          "C) Criar branches",
-          "D) Fazer merge"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Campos personalizáveis permitem enriquecer itens de projeto com metadados."
-      },
-      {
-        "id": 7,
-        "domain": "Benefícios da Comunidade GitHub (10%)",
-        "type": "single",
-        "question_pt": "Como fomentar comunidade saudável em um repositório?",
-        "options": [
-          "A) Adicionar CODE_OF_CONDUCT.md e moderar Discussões",
-          "B) Remover issues antigas sem comentário",
-          "C) Ignorar PRs de primeiros contribuintes",
-          "D) Desabilitar notificações"
-        ],
-        "correct": [
-          "A"
-        ],
-        "explanation_pt": "Código de conduta e moderação ativa melhoram ambiente de colaboração."
-      },
-      {
-        "id": 8,
-        "domain": "Introdução ao Git e GitHub (22%)",
-        "type": "single",
-        "question_pt": "Qual comando cria uma nova branch e muda para ela?",
-        "options": [
-          "A) git new-branch",
-          "B) git switch -c <nome>",
-          "C) git checkout .",
-          "D) git merge -c"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "'git switch -c' (ou 'git checkout -b') cria e alterna para nova branch."
-      },
-      {
-        "id": 9,
-        "domain": "Recursos de colaboração (30%)",
-        "type": "single",
-        "question_pt": "Quando usar 'squash merge' é indicado?",
-        "options": [
-          "A) Nunca",
-          "B) Para condensar múltiplos commits de uma feature em um único commit limpo na main",
-          "C) Para duplicar commits",
-          "D) Para reverter automaticamente"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Squash merge mantém histórico mais limpo em branches principais."
-      },
-      {
-        "id": 10,
-        "domain": "Desenvolvimento Moderno (13%)",
-        "type": "single",
-        "question_pt": "Qual trigger inicia um workflow manualmente?",
-        "options": [
-          "A) push",
-          "B) pull_request",
-          "C) workflow_dispatch",
-          "D) schedule"
-        ],
-        "correct": [
-          "C"
-        ],
-        "explanation_pt": "'workflow_dispatch' expõe botão para execução manual do workflow."
-      }
-    ]
-  }
+  "title": "Simulado GH-900 - Prova 7",
+  "duration_minutes": 90,
+  "questions": [
+    {
+      "options": [
+        "A) git status",
+        "B) git log",
+        "C) git diff",
+        "D) git branch"
+      ],
+      "id": 1,
+      "q": "Qual comando lista o estado atual do working directory e staging area?",
+      "answer": 0,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "explanation": "'git status' mostra arquivos modificados, adicionados e pendentes de commit."
+    },
+    {
+      "options": [
+        "A) Via labels",
+        "B) Via branch protection exigindo PRs e permissões adequadas",
+        "C) Via README",
+        "D) Via Projects"
+      ],
+      "id": 2,
+      "q": "Como restringir quem pode fazer push na branch main?",
+      "answer": 1,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "explanation": "Proteção de branch + permissões impedem push direto e exigem PRs com revisão."
+    },
+    {
+      "options": [
+        "A) Diminui qualidade",
+        "B) Garante avaliação por pares antes do merge",
+        "C) Impede automação",
+        "D) Substitui testes"
+      ],
+      "id": 3,
+      "q": "Qual é o benefício de revisões obrigatórias (Required reviews) em PRs?",
+      "answer": 1,
+      "topic": "Recursos de colaboração (30%)",
+      "explanation": "Revisões obrigatórias elevam a qualidade e reduzem riscos."
+    },
+    {
+      "options": [
+        "A) Instalar dependências",
+        "B) Clonar o repositório na workspace do runner",
+        "C) Publicar artefatos",
+        "D) Configurar variáveis"
+      ],
+      "id": 4,
+      "q": "Qual é a função do 'actions/checkout'?",
+      "answer": 1,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "explanation": "'actions/checkout' traz o código para o ambiente do job."
+    },
+    {
+      "options": [
+        "A) Dependency graph",
+        "B) Releases",
+        "C) Wiki",
+        "D) Tags"
+      ],
+      "id": 5,
+      "q": "Qual recurso ajuda a visualizar grafo de dependências e alertas correlatos?",
+      "answer": 0,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "explanation": "O dependency graph mostra dependências e funciona com alerts do Dependabot."
+    },
+    {
+      "options": [
+        "A) Configurar segredos",
+        "B) Adicionar metadados como prioridade, status, pontuação",
+        "C) Criar branches",
+        "D) Fazer merge"
+      ],
+      "id": 6,
+      "q": "Em Projects (novo), 'fields' servem para…",
+      "answer": 1,
+      "topic": "Gestão de Projetos (7%)",
+      "explanation": "Campos personalizáveis permitem enriquecer itens de projeto com metadados."
+    },
+    {
+      "options": [
+        "A) Adicionar CODE_OF_CONDUCT.md e moderar Discussões",
+        "B) Remover issues antigas sem comentário",
+        "C) Ignorar PRs de primeiros contribuintes",
+        "D) Desabilitar notificações"
+      ],
+      "id": 7,
+      "q": "Como fomentar comunidade saudável em um repositório?",
+      "answer": 0,
+      "topic": "Benefícios da Comunidade GitHub (10%)",
+      "explanation": "Código de conduta e moderação ativa melhoram ambiente de colaboração."
+    },
+    {
+      "options": [
+        "A) git new-branch",
+        "B) git switch -c <nome>",
+        "C) git checkout .",
+        "D) git merge -c"
+      ],
+      "id": 8,
+      "q": "Qual comando cria uma nova branch e muda para ela?",
+      "answer": 1,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "explanation": "'git switch -c' (ou 'git checkout -b') cria e alterna para nova branch."
+    },
+    {
+      "options": [
+        "A) Nunca",
+        "B) Para condensar múltiplos commits de uma feature em um único commit limpo na main",
+        "C) Para duplicar commits",
+        "D) Para reverter automaticamente"
+      ],
+      "id": 9,
+      "q": "Quando usar 'squash merge' é indicado?",
+      "answer": 1,
+      "topic": "Recursos de colaboração (30%)",
+      "explanation": "Squash merge mantém histórico mais limpo em branches principais."
+    },
+    {
+      "options": [
+        "A) push",
+        "B) pull_request",
+        "C) workflow_dispatch",
+        "D) schedule"
+      ],
+      "id": 10,
+      "q": "Qual trigger inicia um workflow manualmente?",
+      "answer": 2,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "explanation": "'workflow_dispatch' expõe botão para execução manual do workflow."
+    }
+  ]
 }
