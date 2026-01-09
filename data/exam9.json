@@ -1,170 +1,136 @@
 {
-  "exam": {
-    "id": "exam9",
-    "title": "Simulado GH-900 - Prova 9",
-    "duration_minutes": 90,
-    "pass_score": 70,
-    "questions": [
-      {
-        "id": 1,
-        "domain": "Introdução ao Git e GitHub (22%)",
-        "type": "single",
-        "question_pt": "O que é um repositório 'fork'?",
-        "options": [
-          "A) Uma cópia que permanece vinculada ao original para PRs",
-          "B) Um branch protegido",
-          "C) Um release",
-          "D) Um template obrigatório"
-        ],
-        "correct": [
-          "A"
-        ],
-        "explanation_pt": "Fork é uma cópia do repositório na sua conta, útil para contribuir via PR."
-      },
-      {
-        "id": 2,
-        "domain": "Trabalhando com repositórios GitHub (8%)",
-        "type": "single",
-        "question_pt": "Onde você gerencia permissões de colaboradores?",
-        "options": [
-          "A) Settings → Collaborators and teams",
-          "B) Wiki",
-          "C) Releases",
-          "D) Projects"
-        ],
-        "correct": [
-          "A"
-        ],
-        "explanation_pt": "Permissões são gerenciadas nas configurações do repositório/organização."
-      },
-      {
-        "id": 3,
-        "domain": "Recursos de colaboração (30%)",
-        "type": "single",
-        "question_pt": "Qual ação em PR ajuda a rastrear mudanças solicitadas?",
-        "options": [
-          "A) Aprovar sem comentários",
-          "B) Solicitar mudanças (Request changes) com comentários específicos",
-          "C) Bloquear PR permanentemente",
-          "D) Fechar a PR"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "'Request changes' registra feedback e impede merge até ajustes."
-      },
-      {
-        "id": 4,
-        "domain": "Desenvolvimento Moderno (13%)",
-        "type": "single",
-        "question_pt": "Para executar testes em múltiplas versões de linguagem, qual recurso usar?",
-        "options": [
-          "A) matrix em strategy",
-          "B) manual dispatch",
-          "C) cron",
-          "D) environment"
-        ],
-        "correct": [
-          "A"
-        ],
-        "explanation_pt": "'strategy.matrix' permite variar versões/SO nos jobs."
-      },
-      {
-        "id": 5,
-        "domain": "Privacidade, Segurança e Administração (10%)",
-        "type": "single",
-        "question_pt": "Como impedir que commits grandes quebrem performance do repositório?",
-        "options": [
-          "A) Usar Git LFS para arquivos grandes (binários, mídia)",
-          "B) Comitar tudo sempre",
-          "C) Ignorar o problema",
-          "D) Remover histórico"
-        ],
-        "correct": [
-          "A"
-        ],
-        "explanation_pt": "Git LFS armazena binários grandes de forma eficiente, evitando inflar o repo."
-      },
-      {
-        "id": 6,
-        "domain": "Gestão de Projetos (7%)",
-        "type": "single",
-        "question_pt": "Projects: o que é uma 'view'?",
-        "options": [
-          "A) Uma branch",
-          "B) Uma forma de visualizar itens com filtros/ordenção/campos",
-          "C) Um tag",
-          "D) Um release"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Views permitem diferentes perspectivas do mesmo conjunto de itens (issues/PRs)."
-      },
-      {
-        "id": 7,
-        "domain": "Benefícios da Comunidade GitHub (10%)",
-        "type": "single",
-        "question_pt": "Qual é uma forma de incentivar novos contribuidores?",
-        "options": [
-          "A) Criar templates de issue/PR (/.github/ISSUE_TEMPLATE)",
-          "B) Remover README",
-          "C) Desativar Discussions",
-          "D) Impedir forks"
-        ],
-        "correct": [
-          "A"
-        ],
-        "explanation_pt": "Templates guiam contribuidores e padronizam relatos e PRs."
-      },
-      {
-        "id": 8,
-        "domain": "Introdução ao Git e GitHub (22%)",
-        "type": "single",
-        "question_pt": "Qual comando cria um tag anotado?",
-        "options": [
-          "A) git tag v1",
-          "B) git tag -a v1.0 -m 'versão 1.0'",
-          "C) git tag -d v1",
-          "D) git tag --list"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Tags anotados guardam mensagem e autor; úteis para releases."
-      },
-      {
-        "id": 9,
-        "domain": "Recursos de colaboração (30%)",
-        "type": "single",
-        "question_pt": "Quando usar 'rebase' em vez de 'merge' na sua branch de feature?",
-        "options": [
-          "A) Sempre, sem exceção",
-          "B) Quando você quer um histórico linear na feature antes de abrir/atualizar a PR",
-          "C) Nunca, rebase é proibido",
-          "D) Apenas após o merge"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Rebase lineariza commits na feature, útil antes de publicar PR, seguindo políticas do time."
-      },
-      {
-        "id": 10,
-        "domain": "Desenvolvimento Moderno (13%)",
-        "type": "single",
-        "question_pt": "Qual ação publica artefatos gerados para download no job?",
-        "options": [
-          "A) actions/setup-node",
-          "B) actions/upload-artifact",
-          "C) actions/checkout",
-          "D) actions/cache"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "'upload-artifact' publica arquivos gerados para consumo posterior."
-      }
-    ]
-  }
+  "title": "Simulado GH-900 - Prova 9",
+  "duration_minutes": 90,
+  "questions": [
+    {
+      "options": [
+        "A) Uma cópia que permanece vinculada ao original para PRs",
+        "B) Um branch protegido",
+        "C) Um release",
+        "D) Um template obrigatório"
+      ],
+      "id": 1,
+      "q": "O que é um repositório 'fork'?",
+      "answer": 0,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "explanation": "Fork é uma cópia do repositório na sua conta, útil para contribuir via PR."
+    },
+    {
+      "options": [
+        "A) Settings → Collaborators and teams",
+        "B) Wiki",
+        "C) Releases",
+        "D) Projects"
+      ],
+      "id": 2,
+      "q": "Onde você gerencia permissões de colaboradores?",
+      "answer": 0,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "explanation": "Permissões são gerenciadas nas configurações do repositório/organização."
+    },
+    {
+      "options": [
+        "A) Aprovar sem comentários",
+        "B) Solicitar mudanças (Request changes) com comentários específicos",
+        "C) Bloquear PR permanentemente",
+        "D) Fechar a PR"
+      ],
+      "id": 3,
+      "q": "Qual ação em PR ajuda a rastrear mudanças solicitadas?",
+      "answer": 1,
+      "topic": "Recursos de colaboração (30%)",
+      "explanation": "'Request changes' registra feedback e impede merge até ajustes."
+    },
+    {
+      "options": [
+        "A) matrix em strategy",
+        "B) manual dispatch",
+        "C) cron",
+        "D) environment"
+      ],
+      "id": 4,
+      "q": "Para executar testes em múltiplas versões de linguagem, qual recurso usar?",
+      "answer": 0,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "explanation": "'strategy.matrix' permite variar versões/SO nos jobs."
+    },
+    {
+      "options": [
+        "A) Usar Git LFS para arquivos grandes (binários, mídia)",
+        "B) Comitar tudo sempre",
+        "C) Ignorar o problema",
+        "D) Remover histórico"
+      ],
+      "id": 5,
+      "q": "Como impedir que commits grandes quebrem performance do repositório?",
+      "answer": 0,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "explanation": "Git LFS armazena binários grandes de forma eficiente, evitando inflar o repo."
+    },
+    {
+      "options": [
+        "A) Uma branch",
+        "B) Uma forma de visualizar itens com filtros/ordenção/campos",
+        "C) Um tag",
+        "D) Um release"
+      ],
+      "id": 6,
+      "q": "Projects: o que é uma 'view'?",
+      "answer": 1,
+      "topic": "Gestão de Projetos (7%)",
+      "explanation": "Views permitem diferentes perspectivas do mesmo conjunto de itens (issues/PRs)."
+    },
+    {
+      "options": [
+        "A) Criar templates de issue/PR (/.github/ISSUE_TEMPLATE)",
+        "B) Remover README",
+        "C) Desativar Discussions",
+        "D) Impedir forks"
+      ],
+      "id": 7,
+      "q": "Qual é uma forma de incentivar novos contribuidores?",
+      "answer": 0,
+      "topic": "Benefícios da Comunidade GitHub (10%)",
+      "explanation": "Templates guiam contribuidores e padronizam relatos e PRs."
+    },
+    {
+      "options": [
+        "A) git tag v1",
+        "B) git tag -a v1.0 -m 'versão 1.0'",
+        "C) git tag -d v1",
+        "D) git tag --list"
+      ],
+      "id": 8,
+      "q": "Qual comando cria um tag anotado?",
+      "answer": 1,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "explanation": "Tags anotados guardam mensagem e autor; úteis para releases."
+    },
+    {
+      "options": [
+        "A) Sempre, sem exceção",
+        "B) Quando você quer um histórico linear na feature antes de abrir/atualizar a PR",
+        "C) Nunca, rebase é proibido",
+        "D) Apenas após o merge"
+      ],
+      "id": 9,
+      "q": "Quando usar 'rebase' em vez de 'merge' na sua branch de feature?",
+      "answer": 1,
+      "topic": "Recursos de colaboração (30%)",
+      "explanation": "Rebase lineariza commits na feature, útil antes de publicar PR, seguindo políticas do time."
+    },
+    {
+      "options": [
+        "A) actions/setup-node",
+        "B) actions/upload-artifact",
+        "C) actions/checkout",
+        "D) actions/cache"
+      ],
+      "id": 10,
+      "q": "Qual ação publica artefatos gerados para download no job?",
+      "answer": 1,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "explanation": "'upload-artifact' publica arquivos gerados para consumo posterior."
+    }
+  ]
 }

@@ -1,170 +1,136 @@
 {
-  "exam": {
-    "id": "exam4",
-    "title": "Simulado GH-900 - Prova 4",
-    "duration_minutes": 90,
-    "pass_score": 70,
-    "questions": [
-      {
-        "id": 1,
-        "domain": "Introdução ao Git e GitHub (22%)",
-        "type": "single",
-        "question_pt": "Qual é a diferença entre um repositório local e um repositório remoto no Git?",
-        "options": [
-          "A) Nenhuma; ambos armazenam os mesmos dados no mesmo lugar",
-          "B) Local fica na sua máquina; remoto fica hospedado em um serviço como GitHub",
-          "C) Local é somente leitura; remoto permite escrita",
-          "D) Remoto só funciona com GitHub Desktop"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Um repositório local vive no seu disco; o remoto é hospedado em um servidor/serviço (ex.: GitHub) e sincroniza via push/pull."
-      },
-      {
-        "id": 2,
-        "domain": "Recursos de colaboração (30%)",
-        "type": "single",
-        "question_pt": "Ao abrir uma pull request (PR), qual prática melhora a revisão de código?",
-        "options": [
-          "A) Unir várias mudanças não relacionadas na mesma PR",
-          "B) Adicionar descrição clara, rótulos e solicitar revisores",
-          "C) Forçar merge sem revisão",
-          "D) Desativar checks de CI"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Descrever contexto, usar labels e designar revisores torna a revisão mais eficiente; checks de CI ajudam a garantir qualidade."
-      },
-      {
-        "id": 3,
-        "domain": "Desenvolvimento Moderno (13%)",
-        "type": "single",
-        "question_pt": "Em GitHub Actions, qual arquivo e local padrão descrevem um workflow?",
-        "options": [
-          "A) .github/workflows/<nome>.yml",
-          "B) actions.yml na raiz",
-          "C) .github/actions/<nome>.json",
-          "D) pipeline.yaml em /pipelines"
-        ],
-        "correct": [
-          "A"
-        ],
-        "explanation_pt": "Workflows são definidos em arquivos YAML dentro de .github/workflows."
-      },
-      {
-        "id": 4,
-        "domain": "Privacidade, Segurança e Administração (10%)",
-        "type": "single",
-        "question_pt": "Qual recurso ajuda a impedir commits em branch protegida sem revisão?",
-        "options": [
-          "A) Labels",
-          "B) Milestones",
-          "C) Regras de proteção de branch (branch protection)",
-          "D) GitHub Pages"
-        ],
-        "correct": [
-          "C"
-        ],
-        "explanation_pt": "Branch protection permite exigir revisões, status de checks e impedir push direto."
-      },
-      {
-        "id": 5,
-        "domain": "Trabalhando com repositórios GitHub (8%)",
-        "type": "single",
-        "question_pt": "Como tornar um repositório um 'template' para gerar novos projetos com a mesma estrutura?",
-        "options": [
-          "A) Habilitar Git LFS",
-          "B) Marcar como Template no Settings",
-          "C) Habilitar Discussions",
-          "D) Criar um fork"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "No Settings do repositório, há a opção de marcá-lo como Template para criação de novos repos."
-      },
-      {
-        "id": 6,
-        "domain": "Gestão de Projetos (7%)",
-        "type": "single",
-        "question_pt": "Qual recurso do GitHub ajuda a organizar tarefas visualmente em quadros com colunas?",
-        "options": [
-          "A) Releases",
-          "B) Projects (Project boards)",
-          "C) Wiki",
-          "D) Actions"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "GitHub Projects (classic ou novo) fornece quadros/boards para gestão de tarefas com issues e PRs."
-      },
-      {
-        "id": 7,
-        "domain": "Introdução ao Git e GitHub (22%)",
-        "type": "single",
-        "question_pt": "Qual comando inicializa um repositório Git em um diretório existente?",
-        "options": [
-          "A) git start",
-          "B) git init",
-          "C) git new",
-          "D) git create"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Use 'git init' para criar um repositório local em um diretório."
-      },
-      {
-        "id": 8,
-        "domain": "Recursos de colaboração (30%)",
-        "type": "single",
-        "question_pt": "Ao revisar uma PR, qual ação evita 'merge' de código quebrado?",
-        "options": [
-          "A) Ignorar status checks",
-          "B) Exigir que todos os checks de CI passem antes do merge",
-          "C) Permitir merges mesmo com falhas",
-          "D) Desabilitar Actions"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Exigir checks verdes garante que testes/lint/build estão OK antes do merge."
-      },
-      {
-        "id": 9,
-        "domain": "Benefícios da Comunidade GitHub (10%)",
-        "type": "single",
-        "question_pt": "Qual prática fortalece sua participação na comunidade open source?",
-        "options": [
-          "A) Enviar PRs sem seguir o CONTRIBUTING.md",
-          "B) Abrir issues claras, propor PRs com testes e respeitar o código de conduta",
-          "C) Criar forks privados sem feedback",
-          "D) Ignorar discussões"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Seguir guias de contribuição e o código de conduta e adicionar testes aumenta a qualidade e a chance de aprovação."
-      },
-      {
-        "id": 10,
-        "domain": "Desenvolvimento Moderno (13%)",
-        "type": "single",
-        "question_pt": "Em um workflow do Actions, qual gatilho roda a cada push para a branch main?",
-        "options": [
-          "A) on: schedule",
-          "B) on: push com branches: [main]",
-          "C) on: workflow_dispatch",
-          "D) on: release"
-        ],
-        "correct": [
-          "B"
-        ],
-        "explanation_pt": "Configurar on: push com branches: [main] executa o workflow em cada push nessa branch."
-      }
-    ]
-  }
+  "title": "Simulado GH-900 - Prova 4",
+  "duration_minutes": 90,
+  "questions": [
+    {
+      "options": [
+        "A) Nenhuma; ambos armazenam os mesmos dados no mesmo lugar",
+        "B) Local fica na sua máquina; remoto fica hospedado em um serviço como GitHub",
+        "C) Local é somente leitura; remoto permite escrita",
+        "D) Remoto só funciona com GitHub Desktop"
+      ],
+      "id": 1,
+      "q": "Qual é a diferença entre um repositório local e um repositório remoto no Git?",
+      "answer": 1,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "explanation": "Um repositório local vive no seu disco; o remoto é hospedado em um servidor/serviço (ex.: GitHub) e sincroniza via push/pull."
+    },
+    {
+      "options": [
+        "A) Unir várias mudanças não relacionadas na mesma PR",
+        "B) Adicionar descrição clara, rótulos e solicitar revisores",
+        "C) Forçar merge sem revisão",
+        "D) Desativar checks de CI"
+      ],
+      "id": 2,
+      "q": "Ao abrir uma pull request (PR), qual prática melhora a revisão de código?",
+      "answer": 1,
+      "topic": "Recursos de colaboração (30%)",
+      "explanation": "Descrever contexto, usar labels e designar revisores torna a revisão mais eficiente; checks de CI ajudam a garantir qualidade."
+    },
+    {
+      "options": [
+        "A) .github/workflows/<nome>.yml",
+        "B) actions.yml na raiz",
+        "C) .github/actions/<nome>.json",
+        "D) pipeline.yaml em /pipelines"
+      ],
+      "id": 3,
+      "q": "Em GitHub Actions, qual arquivo e local padrão descrevem um workflow?",
+      "answer": 0,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "explanation": "Workflows são definidos em arquivos YAML dentro de .github/workflows."
+    },
+    {
+      "options": [
+        "A) Labels",
+        "B) Milestones",
+        "C) Regras de proteção de branch (branch protection)",
+        "D) GitHub Pages"
+      ],
+      "id": 4,
+      "q": "Qual recurso ajuda a impedir commits em branch protegida sem revisão?",
+      "answer": 2,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "explanation": "Branch protection permite exigir revisões, status de checks e impedir push direto."
+    },
+    {
+      "options": [
+        "A) Habilitar Git LFS",
+        "B) Marcar como Template no Settings",
+        "C) Habilitar Discussions",
+        "D) Criar um fork"
+      ],
+      "id": 5,
+      "q": "Como tornar um repositório um 'template' para gerar novos projetos com a mesma estrutura?",
+      "answer": 1,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "explanation": "No Settings do repositório, há a opção de marcá-lo como Template para criação de novos repos."
+    },
+    {
+      "options": [
+        "A) Releases",
+        "B) Projects (Project boards)",
+        "C) Wiki",
+        "D) Actions"
+      ],
+      "id": 6,
+      "q": "Qual recurso do GitHub ajuda a organizar tarefas visualmente em quadros com colunas?",
+      "answer": 1,
+      "topic": "Gestão de Projetos (7%)",
+      "explanation": "GitHub Projects (classic ou novo) fornece quadros/boards para gestão de tarefas com issues e PRs."
+    },
+    {
+      "options": [
+        "A) git start",
+        "B) git init",
+        "C) git new",
+        "D) git create"
+      ],
+      "id": 7,
+      "q": "Qual comando inicializa um repositório Git em um diretório existente?",
+      "answer": 1,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "explanation": "Use 'git init' para criar um repositório local em um diretório."
+    },
+    {
+      "options": [
+        "A) Ignorar status checks",
+        "B) Exigir que todos os checks de CI passem antes do merge",
+        "C) Permitir merges mesmo com falhas",
+        "D) Desabilitar Actions"
+      ],
+      "id": 8,
+      "q": "Ao revisar uma PR, qual ação evita 'merge' de código quebrado?",
+      "answer": 1,
+      "topic": "Recursos de colaboração (30%)",
+      "explanation": "Exigir checks verdes garante que testes/lint/build estão OK antes do merge."
+    },
+    {
+      "options": [
+        "A) Enviar PRs sem seguir o CONTRIBUTING.md",
+        "B) Abrir issues claras, propor PRs com testes e respeitar o código de conduta",
+        "C) Criar forks privados sem feedback",
+        "D) Ignorar discussões"
+      ],
+      "id": 9,
+      "q": "Qual prática fortalece sua participação na comunidade open source?",
+      "answer": 1,
+      "topic": "Benefícios da Comunidade GitHub (10%)",
+      "explanation": "Seguir guias de contribuição e o código de conduta e adicionar testes aumenta a qualidade e a chance de aprovação."
+    },
+    {
+      "options": [
+        "A) on: schedule",
+        "B) on: push com branches: [main]",
+        "C) on: workflow_dispatch",
+        "D) on: release"
+      ],
+      "id": 10,
+      "q": "Em um workflow do Actions, qual gatilho roda a cada push para a branch main?",
+      "answer": 1,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "explanation": "Configurar on: push com branches: [main] executa o workflow em cada push nessa branch."
+    }
+  ]
 }
