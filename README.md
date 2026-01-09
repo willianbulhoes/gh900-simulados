@@ -3,10 +3,23 @@
 Este pacote contém **3 provas simuladas** (60 questões cada, PT-BR) com **gabarito e explicações** e um **cronômetro de 90 minutos**.
 
 ## Como usar localmente
-1. Extraia o arquivo `.zip` e abra `index.html` em seu navegador.
-2. Clique em uma prova para iniciar. O tempo começa automaticamente.
+1. Abra o arquivo `index.html` diretamente no navegador.
+2. Clique em uma prova para iniciar. O cronômetro começa automaticamente.
 3. Ao enviar a prova, você verá seus acertos e as **explicações** por questão.
 4. Para consultar gabaritos completos, use os links na página inicial.
+
+### Servir localmente (opcional)
+Caso prefira um servidor local:
+
+Windows PowerShell:
+
+```powershell
+cd C:\temp\gh900-simulados\gh900-1
+python -m http.server 8080
+# Acesse http://localhost:8080/
+```
+
+VS Code (Live Server): instale a extensão "Live Server" e clique em "Go Live" com `index.html` aberto.
 
 ## Hospedar no GitHub Pages
 1. Crie um repositório (ex.: `gh900-simulados`).
@@ -38,5 +51,9 @@ Este pacote contém **3 provas simuladas** (60 questões cada, PT-BR) com **gaba
 - As provas cobrem: **Conceitos do GitHub**, **Git**, **Colaboração & GitHub Flow**, **Segurança**, **GitHub Actions** e **Packages/Integrações**.
 - O conteúdo está alinhado ao escopo de fundamentos e boas práticas.
 - Todos os gabaritos exibem **explicações detalhadas** após a entrega ou via modo gabarito.
+
+## Manutenção
+- Recomenda-se manter um `.gitignore` para evitar subir caches de IDE (ex.: `.vs/`) e artefatos de sistema.
+- Use `main` como branch padrão e habilite branch protection no GitHub se desejar revisões obrigatórias.
 
 Bom estudo e boa prova! 🎓

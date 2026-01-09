@@ -1,0 +1,17 @@
+# IDE caches
+.vs/
+
+# OS-specific junk
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Copilot/VS indices
+.vs/gh900-simulados/CopilotIndices/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Node/npm (not used now, but safe)
+node_modules/
