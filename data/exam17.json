@@ -1,0 +1,292 @@
+{
+  "title": "Simulado GH-900 – Prova 17",
+  "duration_minutes": 90,
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Sequência típica do GitHub Flow:",
+      "options": [
+        "A) Release → fork → merge",
+        "B) Branch → commits → PR → checagens → merge → deploy",
+        "C) Commits na main → deploy → issue",
+        "D) Criar tag → discussion → merge"
+      ],
+      "answer": 1,
+      "explanation": "Fluxo: branch temático, PR com revisão/CI, merge e deploy contínuo."
+    },
+    {
+      "id": 2,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "GitHub Codespaces é:",
+      "options": [
+        "A) Substituto do Git",
+        "B) Runner de Actions",
+        "C) Ambiente de desenvolvimento na nuvem com VS Code",
+        "D) Gerenciador de issues"
+      ],
+      "answer": 2,
+      "explanation": "Codespaces fornece dev containers e VS Code na nuvem."
+    },
+    {
+      "id": 3,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Onde solicitar revisão de código?",
+      "options": [
+        "A) No Pull Request",
+        "B) Na Issue",
+        "C) Nos Releases",
+        "D) No Wiki"
+      ],
+      "answer": 0,
+      "explanation": "Revisões são parte dos PRs."
+    },
+    {
+      "id": 4,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Git LFS serve para:",
+      "options": [
+        "A) Apagar histórico",
+        "B) Comprimir todos os arquivos",
+        "C) Rastrear arquivos grandes via ponteiros",
+        "D) Criar releases"
+      ],
+      "answer": 2,
+      "explanation": "Git LFS mantém ponteiros no Git e armazena binários fora."
+    },
+    {
+      "id": 5,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Branch protection rules permitem:",
+      "options": [
+        "A) Exigir revisões/checks e bloquear force-push",
+        "B) Tornar o repo público",
+        "C) Alterar licença",
+        "D) Executar builds em self-hosted"
+      ],
+      "answer": 0,
+      "explanation": "Regras: revisão, checks obrigatórios e bloqueio de deleção/force-push."
+    },
+    {
+      "id": 6,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Onde ficam os arquivos de workflow do GitHub Actions?",
+      "options": [
+        "A) github/actions/",
+        "B) .github/workflows/",
+        "C) ci/workflows/",
+        "D) actions/workflows/"
+      ],
+      "answer": 1,
+      "explanation": "Workflows YAML ficam em .github/workflows/."
+    },
+    {
+      "id": 7,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Onde colocar Issue Forms (templates YAML)?",
+      "options": [
+        "A) scripts/",
+        "B) .github/PULL_REQUEST_TEMPLATE/",
+        "C) docs/",
+        "D) .github/ISSUE_TEMPLATE/"
+      ],
+      "answer": 3,
+      "explanation": "Issue Forms ficam em .github/ISSUE_TEMPLATE/."
+    },
+    {
+      "id": 8,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Tag leve vs anotada: ",
+      "options": [
+        "A) Leve tem mensagem; anotada é ponteiro",
+        "B) Anotada tem mensagem/autor/data; leve é ponteiro",
+        "C) Tags só no GitHub",
+        "D) Iguais"
+      ],
+      "answer": 1,
+      "explanation": "Tags anotadas incluem metadados; leves são simples referências."
+    },
+    {
+      "id": 9,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "GitHub-hosted runner vs self-hosted runner:",
+      "options": [
+        "A) GitHub-hosted não suporta containers",
+        "B) GitHub hospeda e gerencia; self-hosted é sua infra",
+        "C) Self-hosted só em repositórios públicos",
+        "D) Iguais"
+      ],
+      "answer": 1,
+      "explanation": "Hospedados pelo GitHub são escalados/atualizados; self-hosted roda na sua infra."
+    },
+    {
+      "id": 10,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Boa prática para mensagens de commit: ",
+      "options": [
+        "A) Apenas emojis",
+        "B) Usar voz imperativa, claro e conciso",
+        "C) Evitar descrição",
+        "D) Incluir arquivos binários"
+      ],
+      "answer": 1,
+      "explanation": "Mensagens curtas e imperativas facilitam revisão e histórico."
+    },
+    {
+      "id": 11,
+      "topic": "Gestão de Projetos (7%)",
+      "q": "GitHub Projects é usado para:",
+      "options": [
+        "A) Rodar builds",
+        "B) Planejamento e rastreamento de trabalho",
+        "C) Hospedar sites",
+        "D) Gerenciar licenças"
+      ],
+      "answer": 1,
+      "explanation": "Projects: boards, tabelas, campos personalizados."
+    },
+    {
+      "id": 12,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Para que servem 'topics' em um repositório?",
+      "options": [
+        "A) Habilitar builds automatizados",
+        "B) Classificar e tornar o repositório mais descobrível",
+        "C) Controlar permissões",
+        "D) Definir proprietários de código"
+      ],
+      "answer": 1,
+      "explanation": "Topics ajudam na descoberta por temas/tecnologias."
+    },
+    {
+      "id": 13,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Evento para acionar manualmente workflow com inputs:",
+      "options": [
+        "A) repository_dispatch",
+        "B) workflow_dispatch",
+        "C) release",
+        "D) push"
+      ],
+      "answer": 1,
+      "explanation": "'workflow_dispatch' cria botão e inputs."
+    },
+    {
+      "id": 14,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Jobs e steps significam:",
+      "options": [
+        "A) Steps só Python",
+        "B) Jobs são máquinas; steps são comandos dentro do job",
+        "C) Jobs apenas em privados",
+        "D) Steps são máquinas; jobs são comandos"
+      ],
+      "answer": 1,
+      "explanation": "Jobs executam em runners; steps executam ações/comandos."
+    },
+    {
+      "id": 15,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "O que são Dependabot alerts?",
+      "options": [
+        "A) Mensagens de commit assinadas",
+        "B) Alertas de vulnerabilidades em dependências",
+        "C) Falhas de runners",
+        "D) Notificações de merges"
+      ],
+      "answer": 1,
+      "explanation": "Alertas detectam dependências vulneráveis com CVEs e sugerem versões."
+    },
+    {
+      "id": 16,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Trazer atualizações do remoto e integrar ao branch atual:",
+      "options": [
+        "A) git commit --amend",
+        "B) git pull",
+        "C) git stash pop",
+        "D) git tag"
+      ],
+      "answer": 1,
+      "explanation": "'git pull' = fetch + merge no branch atual."
+    },
+    {
+      "id": 17,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Para rodar múltiplas combinações (versões/SO):",
+      "options": [
+        "A) env.files",
+        "B) permissions.matrix",
+        "C) strategy.matrix",
+        "D) runs-on: multi"
+      ],
+      "answer": 2,
+      "explanation": "Matriz expande jobs em combinações."
+    },
+    {
+      "id": 18,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Onde você altera o 'default branch' no GitHub?",
+      "options": [
+        "A) Insights → Community",
+        "B) Pull Requests → Merge settings",
+        "C) Actions → Runners",
+        "D) Settings → Branches"
+      ],
+      "answer": 3,
+      "explanation": "O branch padrão é configurado em Settings → Branches."
+    },
+    {
+      "id": 19,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Domínio do GitHub Container Registry:",
+      "options": [
+        "A) cr.github.io",
+        "B) docker.pkg.github.com",
+        "C) registry.github.com",
+        "D) ghcr.io"
+      ],
+      "answer": 3,
+      "explanation": "O registro moderno usa ghcr.io (substitui docker.pkg.github.com)."
+    },
+    {
+      "id": 20,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Qual arquivo é recomendado para descrever o projeto, objetivos e instruções de uso?",
+      "options": [
+        "A) README.md",
+        "B) CODEOWNERS",
+        "C) LICENSE",
+        "D) CONTRIBUTING.md"
+      ],
+      "answer": 0,
+      "explanation": "O arquivo README.md é o ponto de entrada padrão para apresentar o projeto, guias rápidos e links úteis."
+    },
+    {
+      "id": 21,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Ação para cachear dependências:",
+      "options": [
+        "A) actions/setup-node",
+        "B) actions/cache",
+        "C) actions/checkout",
+        "D) actions/upload-artifact"
+      ],
+      "answer": 1,
+      "explanation": "'actions/cache' armazena dependências para acelerar builds."
+    },
+    {
+      "id": 22,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Dependabot security updates:",
+      "options": [
+        "A) Tag protegida",
+        "B) Relatório de licenças",
+        "C) Webhook",
+        "D) PRs automáticos sugerindo atualização segura"
+      ],
+      "answer": 3,
+      "explanation": "Dependabot abre PRs para atualizar dependências vulneráveis."
+    }
+  ]
+}

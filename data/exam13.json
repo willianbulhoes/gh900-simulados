@@ -1,0 +1,292 @@
+{
+  "title": "Simulado GH-900 – Prova 13",
+  "duration_minutes": 90,
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Sequência típica do GitHub Flow:",
+      "options": [
+        "A) Commits na main → deploy → issue",
+        "B) Release → fork → merge",
+        "C) Branch → commits → PR → checagens → merge → deploy",
+        "D) Criar tag → discussion → merge"
+      ],
+      "answer": 2,
+      "explanation": "Fluxo: branch temático, PR com revisão/CI, merge e deploy contínuo."
+    },
+    {
+      "id": 2,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Qual é a finalidade principal de um fork no GitHub?",
+      "options": [
+        "A) Criar uma cópia independente do repositório para experimentar e contribuir",
+        "B) Clonar localmente o repositório para sua máquina",
+        "C) Criar um branch protegido dentro do mesmo repositório",
+        "D) Gerar um release com versionamento semântico"
+      ],
+      "answer": 0,
+      "explanation": "Fork cria uma cópia do repositório na sua conta/organização, permitindo mudanças independentes e PRs de volta."
+    },
+    {
+      "id": 3,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Evento que aciona workflow ao abrir/atualizar PR:",
+      "options": [
+        "A) push",
+        "B) workflow_dispatch",
+        "C) pull_request",
+        "D) schedule"
+      ],
+      "answer": 2,
+      "explanation": "'pull_request' dispara em atividades de PR."
+    },
+    {
+      "id": 4,
+      "topic": "Gestão de Projetos (7%)",
+      "q": "O que são milestones?",
+      "options": [
+        "A) Templates de PR",
+        "B) Recurso só de repositórios privados",
+        "C) Runner do Actions",
+        "D) Metas/entregas para agrupar issues e PRs"
+      ],
+      "answer": 3,
+      "explanation": "Milestones agrupam itens por meta/período."
+    },
+    {
+      "id": 5,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Branches protegidos são úteis para:",
+      "options": [
+        "A) Aumentar storage",
+        "B) Evitar commits diretos e exigir PRs com verificações",
+        "C) Habilitar releases automáticos",
+        "D) Criar webhooks"
+      ],
+      "answer": 1,
+      "explanation": "Proteção impõe regras e bloqueia pushes diretos."
+    },
+    {
+      "id": 6,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Princípio recomendado para permissões:",
+      "options": [
+        "A) Desabilitar autenticação",
+        "B) Permissão total para todos",
+        "C) Permissões só para forks",
+        "D) Menor privilégio necessário"
+      ],
+      "answer": 3,
+      "explanation": "Conceder apenas o mínimo necessário reduz riscos."
+    },
+    {
+      "id": 7,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Git LFS serve para:",
+      "options": [
+        "A) Apagar histórico",
+        "B) Rastrear arquivos grandes via ponteiros",
+        "C) Criar releases",
+        "D) Comprimir todos os arquivos"
+      ],
+      "answer": 1,
+      "explanation": "Git LFS mantém ponteiros no Git e armazena binários fora."
+    },
+    {
+      "id": 8,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Gerenciadores suportados pelo GitHub Packages:",
+      "options": [
+        "A) pip",
+        "B) cargo",
+        "C) npm (entre outros)",
+        "D) composer"
+      ],
+      "answer": 2,
+      "explanation": "Packages suporta npm, Maven, NuGet, RubyGems e Docker/OCI, entre outros."
+    },
+    {
+      "id": 9,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Onde encontrar ações reutilizáveis para workflows?",
+      "options": [
+        "A) GitHub Pages",
+        "B) GitHub Marketplace",
+        "C) Gists",
+        "D) Projects"
+      ],
+      "answer": 1,
+      "explanation": "Marketplace lista ações e integrações para workflows."
+    },
+    {
+      "id": 10,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "O que são Dependabot alerts?",
+      "options": [
+        "A) Alertas de vulnerabilidades em dependências",
+        "B) Notificações de merges",
+        "C) Mensagens de commit assinadas",
+        "D) Falhas de runners"
+      ],
+      "answer": 0,
+      "explanation": "Alertas detectam dependências vulneráveis com CVEs e sugerem versões."
+    },
+    {
+      "id": 11,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "GitHub-hosted runner vs self-hosted runner:",
+      "options": [
+        "A) GitHub hospeda e gerencia; self-hosted é sua infra",
+        "B) GitHub-hosted não suporta containers",
+        "C) Iguais",
+        "D) Self-hosted só em repositórios públicos"
+      ],
+      "answer": 0,
+      "explanation": "Hospedados pelo GitHub são escalados/atualizados; self-hosted roda na sua infra."
+    },
+    {
+      "id": 12,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Secret scanning faz o quê?",
+      "options": [
+        "A) Detecta tokens/credenciais expostos",
+        "B) Assina releases",
+        "C) Cria backups",
+        "D) Criptografa variáveis"
+      ],
+      "answer": 0,
+      "explanation": "Identifica padrões de segredos e alerta."
+    },
+    {
+      "id": 13,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Templates de issue/pull request servem para:",
+      "options": [
+        "A) Modificar licença",
+        "B) Padronizar informações",
+        "C) Acelerar builds",
+        "D) Configurar webhooks"
+      ],
+      "answer": 1,
+      "explanation": "Garantem consistência nas descrições ao abrir issues/PRs."
+    },
+    {
+      "id": 14,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "GitHub Pages serve para:",
+      "options": [
+        "A) Executar CI",
+        "B) Criar containers",
+        "C) Gerenciar permissões de organização",
+        "D) Hospedar sites estáticos do repositório"
+      ],
+      "answer": 3,
+      "explanation": "Pages publica conteúdo estático (HTML/JS/CSS)."
+    },
+    {
+      "id": 15,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Qual recurso agrupa repositórios e usuários sob políticas e cobrança compartilhadas?",
+      "options": [
+        "A) Forks",
+        "B) Gists",
+        "C) Discussions",
+        "D) Organizações"
+      ],
+      "answer": 3,
+      "explanation": "Organizações agrupam repositórios e membros e aplicam políticas centralizadas."
+    },
+    {
+      "id": 16,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Em Git, o que é HEAD?",
+      "options": [
+        "A) Tag de release",
+        "B) Hook de pré-commit",
+        "C) Arquivo de licença",
+        "D) Aponta para o commit/branch atual"
+      ],
+      "answer": 3,
+      "explanation": "HEAD referencia o commit/branch atual."
+    },
+    {
+      "id": 17,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Qual comando cria um novo branch local e muda para ele?",
+      "options": [
+        "A) git branch --switch feature",
+        "B) git init feature",
+        "C) git push -b feature",
+        "D) git checkout -b feature"
+      ],
+      "answer": 3,
+      "explanation": "'git checkout -b <nome>' (ou 'git switch -c') cria e troca para o novo branch."
+    },
+    {
+      "id": 18,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Domínio do GitHub Container Registry:",
+      "options": [
+        "A) registry.github.com",
+        "B) docker.pkg.github.com",
+        "C) ghcr.io",
+        "D) cr.github.io"
+      ],
+      "answer": 2,
+      "explanation": "O registro moderno usa ghcr.io (substitui docker.pkg.github.com)."
+    },
+    {
+      "id": 19,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Qual arquivo é recomendado para descrever o projeto, objetivos e instruções de uso?",
+      "options": [
+        "A) README.md",
+        "B) CONTRIBUTING.md",
+        "C) LICENSE",
+        "D) CODEOWNERS"
+      ],
+      "answer": 0,
+      "explanation": "O arquivo README.md é o ponto de entrada padrão para apresentar o projeto, guias rápidos e links úteis."
+    },
+    {
+      "id": 20,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Acessar secret MY_TOKEN em workflow:",
+      "options": [
+        "A) ${{ github.token }}",
+        "B) ${{ vars.MY_TOKEN }}",
+        "C) ${{ secrets.MY_TOKEN }}",
+        "D) ${{ env.MY_TOKEN }}"
+      ],
+      "answer": 2,
+      "explanation": "Secrets estão no contexto 'secrets'."
+    },
+    {
+      "id": 21,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Webhooks no GitHub servem para:",
+      "options": [
+        "A) Notificar sistemas externos sobre eventos",
+        "B) Gerenciar gists",
+        "C) Criar PATs",
+        "D) Assinar commits"
+      ],
+      "answer": 0,
+      "explanation": "Webhooks enviam POSTs para URLs externas quando eventos ocorrem."
+    },
+    {
+      "id": 22,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Função de labels em issues/PRs:",
+      "options": [
+        "A) Conceder permissões",
+        "B) Classificar e filtrar por categorias",
+        "C) Criar tags de release",
+        "D) Controlar runners"
+      ],
+      "answer": 1,
+      "explanation": "Labels organizam e priorizam trabalho."
+    }
+  ]
+}

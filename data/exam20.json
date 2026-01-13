@@ -1,0 +1,292 @@
+{
+  "title": "Simulado GH-900 – Prova 20",
+  "duration_minutes": 90,
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Estratégia de merge que cria um único commit:",
+      "options": [
+        "A) Rebase merge",
+        "B) Fast-forward",
+        "C) Merge commit",
+        "D) Squash merge"
+      ],
+      "answer": 3,
+      "explanation": "Squash condensa commits do PR em um commit."
+    },
+    {
+      "id": 2,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Branch protection rules permitem:",
+      "options": [
+        "A) Tornar o repo público",
+        "B) Executar builds em self-hosted",
+        "C) Exigir revisões/checks e bloquear force-push",
+        "D) Alterar licença"
+      ],
+      "answer": 2,
+      "explanation": "Regras: revisão, checks obrigatórios e bloqueio de deleção/force-push."
+    },
+    {
+      "id": 3,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Tag leve vs anotada: ",
+      "options": [
+        "A) Iguais",
+        "B) Tags só no GitHub",
+        "C) Leve tem mensagem; anotada é ponteiro",
+        "D) Anotada tem mensagem/autor/data; leve é ponteiro"
+      ],
+      "answer": 3,
+      "explanation": "Tags anotadas incluem metadados; leves são simples referências."
+    },
+    {
+      "id": 4,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Função de labels em issues/PRs:",
+      "options": [
+        "A) Criar tags de release",
+        "B) Controlar runners",
+        "C) Conceder permissões",
+        "D) Classificar e filtrar por categorias"
+      ],
+      "answer": 3,
+      "explanation": "Labels organizam e priorizam trabalho."
+    },
+    {
+      "id": 5,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Sequência típica do GitHub Flow:",
+      "options": [
+        "A) Criar tag → discussion → merge",
+        "B) Commits na main → deploy → issue",
+        "C) Release → fork → merge",
+        "D) Branch → commits → PR → checagens → merge → deploy"
+      ],
+      "answer": 3,
+      "explanation": "Fluxo: branch temático, PR com revisão/CI, merge e deploy contínuo."
+    },
+    {
+      "id": 6,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Para rodar múltiplas combinações (versões/SO):",
+      "options": [
+        "A) strategy.matrix",
+        "B) env.files",
+        "C) permissions.matrix",
+        "D) runs-on: multi"
+      ],
+      "answer": 0,
+      "explanation": "Matriz expande jobs em combinações."
+    },
+    {
+      "id": 7,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Templates de issue/pull request servem para:",
+      "options": [
+        "A) Configurar webhooks",
+        "B) Padronizar informações",
+        "C) Modificar licença",
+        "D) Acelerar builds"
+      ],
+      "answer": 1,
+      "explanation": "Garantem consistência nas descrições ao abrir issues/PRs."
+    },
+    {
+      "id": 8,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Versionar e disponibilizar binários:",
+      "options": [
+        "A) Projects",
+        "B) Wiki",
+        "C) Releases",
+        "D) Gists"
+      ],
+      "answer": 2,
+      "explanation": "Releases anexam binários e notas de versão."
+    },
+    {
+      "id": 9,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Acessar secret MY_TOKEN em workflow:",
+      "options": [
+        "A) ${{ env.MY_TOKEN }}",
+        "B) ${{ github.token }}",
+        "C) ${{ secrets.MY_TOKEN }}",
+        "D) ${{ vars.MY_TOKEN }}"
+      ],
+      "answer": 2,
+      "explanation": "Secrets estão no contexto 'secrets'."
+    },
+    {
+      "id": 10,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "O que são status checks?",
+      "options": [
+        "A) Lista de issues vinculadas",
+        "B) Notificações",
+        "C) Tipo de branch protegido",
+        "D) Resultados de CI/validações que precisam passar"
+      ],
+      "answer": 3,
+      "explanation": "Checks refletem testes/linters/builds e podem ser obrigatórios."
+    },
+    {
+      "id": 11,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Gerenciadores suportados pelo GitHub Packages:",
+      "options": [
+        "A) pip",
+        "B) cargo",
+        "C) composer",
+        "D) npm (entre outros)"
+      ],
+      "answer": 3,
+      "explanation": "Packages suporta npm, Maven, NuGet, RubyGems e Docker/OCI, entre outros."
+    },
+    {
+      "id": 12,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Merge vs rebase:",
+      "options": [
+        "A) Merge apaga commits; rebase cria tags",
+        "B) Merge reescreve; rebase sempre cria merge commit",
+        "C) Merge preserva histórico; rebase reescreve para linearizar",
+        "D) Merge só funciona em repositórios privados"
+      ],
+      "answer": 2,
+      "explanation": "Merge integra historicamente; rebase reaplica commits criando histórico linear."
+    },
+    {
+      "id": 13,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Draft Pull Request indica:",
+      "options": [
+        "A) Trabalho em andamento; merge desabilitado até marcar pronto",
+        "B) Ignora checks",
+        "C) PR normal",
+        "D) Apaga o branch automático"
+      ],
+      "answer": 0,
+      "explanation": "Draft evita merge acidental e sinaliza WIP."
+    },
+    {
+      "id": 14,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Boa prática para mensagens de commit: ",
+      "options": [
+        "A) Incluir arquivos binários",
+        "B) Apenas emojis",
+        "C) Evitar descrição",
+        "D) Usar voz imperativa, claro e conciso"
+      ],
+      "answer": 3,
+      "explanation": "Mensagens curtas e imperativas facilitam revisão e histórico."
+    },
+    {
+      "id": 15,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Dependabot security updates:",
+      "options": [
+        "A) Webhook",
+        "B) Relatório de licenças",
+        "C) PRs automáticos sugerindo atualização segura",
+        "D) Tag protegida"
+      ],
+      "answer": 2,
+      "explanation": "Dependabot abre PRs para atualizar dependências vulneráveis."
+    },
+    {
+      "id": 16,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Em Git, o que é HEAD?",
+      "options": [
+        "A) Tag de release",
+        "B) Aponta para o commit/branch atual",
+        "C) Arquivo de licença",
+        "D) Hook de pré-commit"
+      ],
+      "answer": 1,
+      "explanation": "HEAD referencia o commit/branch atual."
+    },
+    {
+      "id": 17,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Domínio do GitHub Container Registry:",
+      "options": [
+        "A) docker.pkg.github.com",
+        "B) registry.github.com",
+        "C) ghcr.io",
+        "D) cr.github.io"
+      ],
+      "answer": 2,
+      "explanation": "O registro moderno usa ghcr.io (substitui docker.pkg.github.com)."
+    },
+    {
+      "id": 18,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Definir permissões do GITHUB_TOKEN no workflow:",
+      "options": [
+        "A) README.md",
+        "B) Campo 'permissions:'",
+        "C) CODEOWNERS",
+        "D) .gitignore"
+      ],
+      "answer": 1,
+      "explanation": "'permissions:' ajusta escopos do token."
+    },
+    {
+      "id": 19,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Guardar e baixar artefatos de build:",
+      "options": [
+        "A) cache",
+        "B) checkout",
+        "C) upload/download-artifact",
+        "D) setup-python"
+      ],
+      "answer": 2,
+      "explanation": "Artifacts permitem compartilhar binários/logs entre jobs."
+    },
+    {
+      "id": 20,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Onde solicitar revisão de código?",
+      "options": [
+        "A) Nos Releases",
+        "B) No Pull Request",
+        "C) Na Issue",
+        "D) No Wiki"
+      ],
+      "answer": 1,
+      "explanation": "Revisões são parte dos PRs."
+    },
+    {
+      "id": 21,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Qual comando envia commits locais para o repositório remoto?",
+      "options": [
+        "A) git push",
+        "B) git clone",
+        "C) git fetch",
+        "D) git add"
+      ],
+      "answer": 0,
+      "explanation": "'git push' envia commits para o remoto configurado."
+    },
+    {
+      "id": 22,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Qual comando cria um novo branch local e muda para ele?",
+      "options": [
+        "A) git checkout -b feature",
+        "B) git branch --switch feature",
+        "C) git push -b feature",
+        "D) git init feature"
+      ],
+      "answer": 0,
+      "explanation": "'git checkout -b <nome>' (ou 'git switch -c') cria e troca para o novo branch."
+    }
+  ]
+}

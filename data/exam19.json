@@ -1,0 +1,292 @@
+{
+  "title": "Simulado GH-900 – Prova 19",
+  "duration_minutes": 90,
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Qual é a finalidade principal de um fork no GitHub?",
+      "options": [
+        "A) Clonar localmente o repositório para sua máquina",
+        "B) Gerar um release com versionamento semântico",
+        "C) Criar uma cópia independente do repositório para experimentar e contribuir",
+        "D) Criar um branch protegido dentro do mesmo repositório"
+      ],
+      "answer": 2,
+      "explanation": "Fork cria uma cópia do repositório na sua conta/organização, permitindo mudanças independentes e PRs de volta."
+    },
+    {
+      "id": 2,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Tag leve vs anotada: ",
+      "options": [
+        "A) Anotada tem mensagem/autor/data; leve é ponteiro",
+        "B) Leve tem mensagem; anotada é ponteiro",
+        "C) Tags só no GitHub",
+        "D) Iguais"
+      ],
+      "answer": 0,
+      "explanation": "Tags anotadas incluem metadados; leves são simples referências."
+    },
+    {
+      "id": 3,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Onde encontrar ações reutilizáveis para workflows?",
+      "options": [
+        "A) GitHub Pages",
+        "B) Gists",
+        "C) GitHub Marketplace",
+        "D) Projects"
+      ],
+      "answer": 2,
+      "explanation": "Marketplace lista ações e integrações para workflows."
+    },
+    {
+      "id": 4,
+      "topic": "Gestão de Projetos (7%)",
+      "q": "O que são milestones?",
+      "options": [
+        "A) Metas/entregas para agrupar issues e PRs",
+        "B) Runner do Actions",
+        "C) Templates de PR",
+        "D) Recurso só de repositórios privados"
+      ],
+      "answer": 0,
+      "explanation": "Milestones agrupam itens por meta/período."
+    },
+    {
+      "id": 5,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "O que são status checks?",
+      "options": [
+        "A) Resultados de CI/validações que precisam passar",
+        "B) Notificações",
+        "C) Lista de issues vinculadas",
+        "D) Tipo de branch protegido"
+      ],
+      "answer": 0,
+      "explanation": "Checks refletem testes/linters/builds e podem ser obrigatórios."
+    },
+    {
+      "id": 6,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Git LFS serve para:",
+      "options": [
+        "A) Apagar histórico",
+        "B) Rastrear arquivos grandes via ponteiros",
+        "C) Comprimir todos os arquivos",
+        "D) Criar releases"
+      ],
+      "answer": 1,
+      "explanation": "Git LFS mantém ponteiros no Git e armazena binários fora."
+    },
+    {
+      "id": 7,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Evento que aciona workflow ao abrir/atualizar PR:",
+      "options": [
+        "A) schedule",
+        "B) workflow_dispatch",
+        "C) push",
+        "D) pull_request"
+      ],
+      "answer": 3,
+      "explanation": "'pull_request' dispara em atividades de PR."
+    },
+    {
+      "id": 8,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Para que serve um 'template repository'?",
+      "options": [
+        "A) Guardar binários de build",
+        "B) Configurar webhooks automaticamente",
+        "C) Criar novos repositórios com a mesma estrutura",
+        "D) Proteger branches contra force-push"
+      ],
+      "answer": 2,
+      "explanation": "Templates permitem iniciar novos repositórios reutilizando estrutura e arquivos."
+    },
+    {
+      "id": 9,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Webhooks no GitHub servem para:",
+      "options": [
+        "A) Notificar sistemas externos sobre eventos",
+        "B) Gerenciar gists",
+        "C) Assinar commits",
+        "D) Criar PATs"
+      ],
+      "answer": 0,
+      "explanation": "Webhooks enviam POSTs para URLs externas quando eventos ocorrem."
+    },
+    {
+      "id": 10,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Boa prática para mensagens de commit: ",
+      "options": [
+        "A) Usar voz imperativa, claro e conciso",
+        "B) Incluir arquivos binários",
+        "C) Apenas emojis",
+        "D) Evitar descrição"
+      ],
+      "answer": 0,
+      "explanation": "Mensagens curtas e imperativas facilitam revisão e histórico."
+    },
+    {
+      "id": 11,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "GitHub Apps vs OAuth Apps, principal diferença:",
+      "options": [
+        "A) OAuth Apps suportam webhooks; GitHub Apps não",
+        "B) Sem diferenças",
+        "C) GitHub Apps têm permissões granulares/tokens de instalação; OAuth Apps atuam em nome do usuário",
+        "D) GitHub Apps só em privados"
+      ],
+      "answer": 2,
+      "explanation": "GitHub Apps usam permissões por recurso e tokens de instalação; OAuth Apps usam escopos do usuário."
+    },
+    {
+      "id": 12,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Draft Pull Request indica:",
+      "options": [
+        "A) Apaga o branch automático",
+        "B) Trabalho em andamento; merge desabilitado até marcar pronto",
+        "C) Ignora checks",
+        "D) PR normal"
+      ],
+      "answer": 1,
+      "explanation": "Draft evita merge acidental e sinaliza WIP."
+    },
+    {
+      "id": 13,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Qual comando envia commits locais para o repositório remoto?",
+      "options": [
+        "A) git fetch",
+        "B) git add",
+        "C) git clone",
+        "D) git push"
+      ],
+      "answer": 3,
+      "explanation": "'git push' envia commits para o remoto configurado."
+    },
+    {
+      "id": 14,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Qual arquivo ignora arquivos/pastas do versionamento?",
+      "options": [
+        "A) CODEOWNERS",
+        "B) SECURITY.md",
+        "C) README.md",
+        "D) .gitignore"
+      ],
+      "answer": 3,
+      "explanation": ".gitignore lista padrões não rastreados."
+    },
+    {
+      "id": 15,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Estratégia de merge que cria um único commit:",
+      "options": [
+        "A) Squash merge",
+        "B) Merge commit",
+        "C) Fast-forward",
+        "D) Rebase merge"
+      ],
+      "answer": 0,
+      "explanation": "Squash condensa commits do PR em um commit."
+    },
+    {
+      "id": 16,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Guardar e baixar artefatos de build:",
+      "options": [
+        "A) checkout",
+        "B) cache",
+        "C) setup-python",
+        "D) upload/download-artifact"
+      ],
+      "answer": 3,
+      "explanation": "Artifacts permitem compartilhar binários/logs entre jobs."
+    },
+    {
+      "id": 17,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Qual opção descreve corretamente 'star', 'watch' e 'fork'?",
+      "options": [
+        "A) Star favorito; Watch notificações; Fork cópia no perfil",
+        "B) Star controla notificações; Watch adiciona licença; Fork cria release",
+        "C) Star cria cópia; Watch favorita; Fork envia commits",
+        "D) Star dá permissão de escrita; Watch cria branch; Fork cria issue"
+      ],
+      "answer": 0,
+      "explanation": "Star é favorito, Watch controla notificações, Fork cria uma cópia na sua conta."
+    },
+    {
+      "id": 18,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Qual comando cria um novo branch local e muda para ele?",
+      "options": [
+        "A) git checkout -b feature",
+        "B) git branch --switch feature",
+        "C) git push -b feature",
+        "D) git init feature"
+      ],
+      "answer": 0,
+      "explanation": "'git checkout -b <nome>' (ou 'git switch -c') cria e troca para o novo branch."
+    },
+    {
+      "id": 19,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Evento para acionar manualmente workflow com inputs:",
+      "options": [
+        "A) repository_dispatch",
+        "B) release",
+        "C) push",
+        "D) workflow_dispatch"
+      ],
+      "answer": 3,
+      "explanation": "'workflow_dispatch' cria botão e inputs."
+    },
+    {
+      "id": 20,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Onde ficam os arquivos de workflow do GitHub Actions?",
+      "options": [
+        "A) ci/workflows/",
+        "B) .github/workflows/",
+        "C) github/actions/",
+        "D) actions/workflows/"
+      ],
+      "answer": 1,
+      "explanation": "Workflows YAML ficam em .github/workflows/."
+    },
+    {
+      "id": 21,
+      "topic": "Benefícios da Comunidade GitHub (10%)",
+      "q": "Diferença entre Discussions e Issues:",
+      "options": [
+        "A) Discussions: ideação/Q&A; Issues: tarefas rastreáveis",
+        "B) Issues só em privados",
+        "C) Iguais",
+        "D) Discussions substituem PRs"
+      ],
+      "answer": 0,
+      "explanation": "Discussions para conversas; Issues para tarefas."
+    },
+    {
+      "id": 22,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Dependabot security updates:",
+      "options": [
+        "A) Relatório de licenças",
+        "B) Webhook",
+        "C) Tag protegida",
+        "D) PRs automáticos sugerindo atualização segura"
+      ],
+      "answer": 3,
+      "explanation": "Dependabot abre PRs para atualizar dependências vulneráveis."
+    }
+  ]
+}
