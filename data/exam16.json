@@ -1,0 +1,292 @@
+{
+  "title": "Simulado GH-900 – Prova 16",
+  "duration_minutes": 90,
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "O que são Dependabot alerts?",
+      "options": [
+        "A) Notificações de merges",
+        "B) Alertas de vulnerabilidades em dependências",
+        "C) Falhas de runners",
+        "D) Mensagens de commit assinadas"
+      ],
+      "answer": 1,
+      "explanation": "Alertas detectam dependências vulneráveis com CVEs e sugerem versões."
+    },
+    {
+      "id": 2,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Onde ficam os arquivos de workflow do GitHub Actions?",
+      "options": [
+        "A) ci/workflows/",
+        "B) github/actions/",
+        "C) .github/workflows/",
+        "D) actions/workflows/"
+      ],
+      "answer": 2,
+      "explanation": "Workflows YAML ficam em .github/workflows/."
+    },
+    {
+      "id": 3,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Tag leve vs anotada: ",
+      "options": [
+        "A) Anotada tem mensagem/autor/data; leve é ponteiro",
+        "B) Iguais",
+        "C) Leve tem mensagem; anotada é ponteiro",
+        "D) Tags só no GitHub"
+      ],
+      "answer": 0,
+      "explanation": "Tags anotadas incluem metadados; leves são simples referências."
+    },
+    {
+      "id": 4,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Para documentar como reportar vulnerabilidades, use:",
+      "options": [
+        "A) CODEOWNERS",
+        "B) DOCKERFILE",
+        "C) SECURITY.md",
+        "D) README.md"
+      ],
+      "answer": 2,
+      "explanation": "SECURITY.md traz diretrizes de reporte responsável."
+    },
+    {
+      "id": 5,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Ao tornar um repositório público vs privado, qual é a diferença?",
+      "options": [
+        "A) Não há diferença",
+        "B) Público: apenas leitura; Privado: apenas escrita",
+        "C) Público: exige autenticação; Privado: não exige",
+        "D) Público: visível a todos; Privado: visível apenas para quem tem permissão"
+      ],
+      "answer": 3,
+      "explanation": "Repositórios públicos são visíveis para qualquer pessoa; privados exigem permissão explícita."
+    },
+    {
+      "id": 6,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Onde documentar diretrizes de contribuição (PRs, padrões de código)?",
+      "options": [
+        "A) README.md",
+        "B) CONTRIBUTING.md",
+        "C) SECURITY.md",
+        "D) LICENSE"
+      ],
+      "answer": 1,
+      "explanation": "CONTRIBUTING.md descreve como contribuir, abrir issues/PRs e padrões."
+    },
+    {
+      "id": 7,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Secret scanning faz o quê?",
+      "options": [
+        "A) Assina releases",
+        "B) Criptografa variáveis",
+        "C) Cria backups",
+        "D) Detecta tokens/credenciais expostos"
+      ],
+      "answer": 3,
+      "explanation": "Identifica padrões de segredos e alerta."
+    },
+    {
+      "id": 8,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Para que serve um 'template repository'?",
+      "options": [
+        "A) Proteger branches contra force-push",
+        "B) Configurar webhooks automaticamente",
+        "C) Criar novos repositórios com a mesma estrutura",
+        "D) Guardar binários de build"
+      ],
+      "answer": 2,
+      "explanation": "Templates permitem iniciar novos repositórios reutilizando estrutura e arquivos."
+    },
+    {
+      "id": 9,
+      "topic": "Gestão de Projetos (7%)",
+      "q": "GitHub Projects é usado para:",
+      "options": [
+        "A) Hospedar sites",
+        "B) Planejamento e rastreamento de trabalho",
+        "C) Rodar builds",
+        "D) Gerenciar licenças"
+      ],
+      "answer": 1,
+      "explanation": "Projects: boards, tabelas, campos personalizados."
+    },
+    {
+      "id": 10,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Qual recurso agrupa repositórios e usuários sob políticas e cobrança compartilhadas?",
+      "options": [
+        "A) Discussions",
+        "B) Organizações",
+        "C) Forks",
+        "D) Gists"
+      ],
+      "answer": 1,
+      "explanation": "Organizações agrupam repositórios e membros e aplicam políticas centralizadas."
+    },
+    {
+      "id": 11,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Qual comando cria um novo branch local e muda para ele?",
+      "options": [
+        "A) git branch --switch feature",
+        "B) git init feature",
+        "C) git push -b feature",
+        "D) git checkout -b feature"
+      ],
+      "answer": 3,
+      "explanation": "'git checkout -b <nome>' (ou 'git switch -c') cria e troca para o novo branch."
+    },
+    {
+      "id": 12,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Onde encontrar ações reutilizáveis para workflows?",
+      "options": [
+        "A) Projects",
+        "B) Gists",
+        "C) GitHub Marketplace",
+        "D) GitHub Pages"
+      ],
+      "answer": 2,
+      "explanation": "Marketplace lista ações e integrações para workflows."
+    },
+    {
+      "id": 13,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "GitHub Apps vs OAuth Apps, principal diferença:",
+      "options": [
+        "A) Sem diferenças",
+        "B) GitHub Apps têm permissões granulares/tokens de instalação; OAuth Apps atuam em nome do usuário",
+        "C) OAuth Apps suportam webhooks; GitHub Apps não",
+        "D) GitHub Apps só em privados"
+      ],
+      "answer": 1,
+      "explanation": "GitHub Apps usam permissões por recurso e tokens de instalação; OAuth Apps usam escopos do usuário."
+    },
+    {
+      "id": 14,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Commits assinados (Verified) indicam:",
+      "options": [
+        "A) Que foi revertido",
+        "B) Que o commit contém binários",
+        "C) Autenticidade do autor via GPG/SSH",
+        "D) Que veio de um fork"
+      ],
+      "answer": 2,
+      "explanation": "Assinaturas comprovam identidade do autor."
+    },
+    {
+      "id": 15,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Merge vs rebase:",
+      "options": [
+        "A) Merge preserva histórico; rebase reescreve para linearizar",
+        "B) Merge reescreve; rebase sempre cria merge commit",
+        "C) Merge apaga commits; rebase cria tags",
+        "D) Merge só funciona em repositórios privados"
+      ],
+      "answer": 0,
+      "explanation": "Merge integra historicamente; rebase reaplica commits criando histórico linear."
+    },
+    {
+      "id": 16,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Guardar e baixar artefatos de build:",
+      "options": [
+        "A) cache",
+        "B) checkout",
+        "C) upload/download-artifact",
+        "D) setup-python"
+      ],
+      "answer": 2,
+      "explanation": "Artifacts permitem compartilhar binários/logs entre jobs."
+    },
+    {
+      "id": 17,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Desfazer último commit mantendo mudanças no staging: ",
+      "options": [
+        "A) git reset --soft HEAD~1",
+        "B) git revert HEAD",
+        "C) git pull --rebase",
+        "D) git rm --cached ."
+      ],
+      "answer": 0,
+      "explanation": "'reset --soft' remove o commit mantendo alterações no index."
+    },
+    {
+      "id": 18,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Git LFS serve para:",
+      "options": [
+        "A) Comprimir todos os arquivos",
+        "B) Rastrear arquivos grandes via ponteiros",
+        "C) Criar releases",
+        "D) Apagar histórico"
+      ],
+      "answer": 1,
+      "explanation": "Git LFS mantém ponteiros no Git e armazena binários fora."
+    },
+    {
+      "id": 19,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Qual comando envia commits locais para o repositório remoto?",
+      "options": [
+        "A) git add",
+        "B) git push",
+        "C) git fetch",
+        "D) git clone"
+      ],
+      "answer": 1,
+      "explanation": "'git push' envia commits para o remoto configurado."
+    },
+    {
+      "id": 20,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Ação para cachear dependências:",
+      "options": [
+        "A) actions/upload-artifact",
+        "B) actions/setup-node",
+        "C) actions/checkout",
+        "D) actions/cache"
+      ],
+      "answer": 3,
+      "explanation": "'actions/cache' armazena dependências para acelerar builds."
+    },
+    {
+      "id": 21,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Onde solicitar revisão de código?",
+      "options": [
+        "A) Na Issue",
+        "B) No Pull Request",
+        "C) No Wiki",
+        "D) Nos Releases"
+      ],
+      "answer": 1,
+      "explanation": "Revisões são parte dos PRs."
+    },
+    {
+      "id": 22,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Branch protection rules permitem:",
+      "options": [
+        "A) Executar builds em self-hosted",
+        "B) Tornar o repo público",
+        "C) Exigir revisões/checks e bloquear force-push",
+        "D) Alterar licença"
+      ],
+      "answer": 2,
+      "explanation": "Regras: revisão, checks obrigatórios e bloqueio de deleção/force-push."
+    }
+  ]
+}

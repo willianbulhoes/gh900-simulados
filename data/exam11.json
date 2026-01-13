@@ -1,0 +1,292 @@
+{
+  "title": "Simulado GH-900 – Prova 11",
+  "duration_minutes": 90,
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Para que servem 'topics' em um repositório?",
+      "options": [
+        "A) Controlar permissões",
+        "B) Habilitar builds automatizados",
+        "C) Definir proprietários de código",
+        "D) Classificar e tornar o repositório mais descobrível"
+      ],
+      "answer": 3,
+      "explanation": "Topics ajudam na descoberta por temas/tecnologias."
+    },
+    {
+      "id": 2,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Ação para cachear dependências:",
+      "options": [
+        "A) actions/cache",
+        "B) actions/upload-artifact",
+        "C) actions/checkout",
+        "D) actions/setup-node"
+      ],
+      "answer": 0,
+      "explanation": "'actions/cache' armazena dependências para acelerar builds."
+    },
+    {
+      "id": 3,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Princípio recomendado para permissões:",
+      "options": [
+        "A) Permissões só para forks",
+        "B) Menor privilégio necessário",
+        "C) Permissão total para todos",
+        "D) Desabilitar autenticação"
+      ],
+      "answer": 1,
+      "explanation": "Conceder apenas o mínimo necessário reduz riscos."
+    },
+    {
+      "id": 4,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Onde você altera o 'default branch' no GitHub?",
+      "options": [
+        "A) Insights → Community",
+        "B) Actions → Runners",
+        "C) Settings → Branches",
+        "D) Pull Requests → Merge settings"
+      ],
+      "answer": 2,
+      "explanation": "O branch padrão é configurado em Settings → Branches."
+    },
+    {
+      "id": 5,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Evento para acionar manualmente workflow com inputs:",
+      "options": [
+        "A) push",
+        "B) release",
+        "C) workflow_dispatch",
+        "D) repository_dispatch"
+      ],
+      "answer": 2,
+      "explanation": "'workflow_dispatch' cria botão e inputs."
+    },
+    {
+      "id": 6,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Para que serve um 'template repository'?",
+      "options": [
+        "A) Guardar binários de build",
+        "B) Proteger branches contra force-push",
+        "C) Configurar webhooks automaticamente",
+        "D) Criar novos repositórios com a mesma estrutura"
+      ],
+      "answer": 3,
+      "explanation": "Templates permitem iniciar novos repositórios reutilizando estrutura e arquivos."
+    },
+    {
+      "id": 7,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Autenticar para publicar/instalar pacotes:",
+      "options": [
+        "A) GITHUB_TOKEN ou PAT com escopos",
+        "B) SSH sem chave",
+        "C) Senha em texto plano",
+        "D) Cookies"
+      ],
+      "answer": 0,
+      "explanation": "Autenticação via GITHUB_TOKEN (Actions) ou PAT (packages, read:packages)."
+    },
+    {
+      "id": 8,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Em Enterprise, SAML/SSO é usado para:",
+      "options": [
+        "A) Criar releases",
+        "B) Desabilitar issues",
+        "C) Centralizar autenticação via identidade corporativa",
+        "D) Habilitar Pages"
+      ],
+      "answer": 2,
+      "explanation": "SSO/SAML controla acesso a organizações e recursos."
+    },
+    {
+      "id": 9,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Estratégia de merge que cria um único commit:",
+      "options": [
+        "A) Fast-forward",
+        "B) Rebase merge",
+        "C) Merge commit",
+        "D) Squash merge"
+      ],
+      "answer": 3,
+      "explanation": "Squash condensa commits do PR em um commit."
+    },
+    {
+      "id": 10,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Qual opção descreve corretamente 'star', 'watch' e 'fork'?",
+      "options": [
+        "A) Star dá permissão de escrita; Watch cria branch; Fork cria issue",
+        "B) Star controla notificações; Watch adiciona licença; Fork cria release",
+        "C) Star cria cópia; Watch favorita; Fork envia commits",
+        "D) Star favorito; Watch notificações; Fork cópia no perfil"
+      ],
+      "answer": 3,
+      "explanation": "Star é favorito, Watch controla notificações, Fork cria uma cópia na sua conta."
+    },
+    {
+      "id": 11,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Qual comando envia commits locais para o repositório remoto?",
+      "options": [
+        "A) git push",
+        "B) git clone",
+        "C) git add",
+        "D) git fetch"
+      ],
+      "answer": 0,
+      "explanation": "'git push' envia commits para o remoto configurado."
+    },
+    {
+      "id": 12,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Gerenciadores suportados pelo GitHub Packages:",
+      "options": [
+        "A) pip",
+        "B) cargo",
+        "C) npm (entre outros)",
+        "D) composer"
+      ],
+      "answer": 2,
+      "explanation": "Packages suporta npm, Maven, NuGet, RubyGems e Docker/OCI, entre outros."
+    },
+    {
+      "id": 13,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Git LFS serve para:",
+      "options": [
+        "A) Criar releases",
+        "B) Apagar histórico",
+        "C) Rastrear arquivos grandes via ponteiros",
+        "D) Comprimir todos os arquivos"
+      ],
+      "answer": 2,
+      "explanation": "Git LFS mantém ponteiros no Git e armazena binários fora."
+    },
+    {
+      "id": 14,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Ao tornar um repositório público vs privado, qual é a diferença?",
+      "options": [
+        "A) Público: visível a todos; Privado: visível apenas para quem tem permissão",
+        "B) Público: apenas leitura; Privado: apenas escrita",
+        "C) Público: exige autenticação; Privado: não exige",
+        "D) Não há diferença"
+      ],
+      "answer": 0,
+      "explanation": "Repositórios públicos são visíveis para qualquer pessoa; privados exigem permissão explícita."
+    },
+    {
+      "id": 15,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Dependabot security updates:",
+      "options": [
+        "A) Tag protegida",
+        "B) Webhook",
+        "C) Relatório de licenças",
+        "D) PRs automáticos sugerindo atualização segura"
+      ],
+      "answer": 3,
+      "explanation": "Dependabot abre PRs para atualizar dependências vulneráveis."
+    },
+    {
+      "id": 16,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Qual recurso agrupa repositórios e usuários sob políticas e cobrança compartilhadas?",
+      "options": [
+        "A) Forks",
+        "B) Organizações",
+        "C) Gists",
+        "D) Discussions"
+      ],
+      "answer": 1,
+      "explanation": "Organizações agrupam repositórios e membros e aplicam políticas centralizadas."
+    },
+    {
+      "id": 17,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Onde solicitar revisão de código?",
+      "options": [
+        "A) No Wiki",
+        "B) No Pull Request",
+        "C) Nos Releases",
+        "D) Na Issue"
+      ],
+      "answer": 1,
+      "explanation": "Revisões são parte dos PRs."
+    },
+    {
+      "id": 18,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Webhooks no GitHub servem para:",
+      "options": [
+        "A) Notificar sistemas externos sobre eventos",
+        "B) Criar PATs",
+        "C) Assinar commits",
+        "D) Gerenciar gists"
+      ],
+      "answer": 0,
+      "explanation": "Webhooks enviam POSTs para URLs externas quando eventos ocorrem."
+    },
+    {
+      "id": 19,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Qual comando cria um novo branch local e muda para ele?",
+      "options": [
+        "A) git checkout -b feature",
+        "B) git init feature",
+        "C) git push -b feature",
+        "D) git branch --switch feature"
+      ],
+      "answer": 0,
+      "explanation": "'git checkout -b <nome>' (ou 'git switch -c') cria e troca para o novo branch."
+    },
+    {
+      "id": 20,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Trazer atualizações do remoto e integrar ao branch atual:",
+      "options": [
+        "A) git tag",
+        "B) git stash pop",
+        "C) git pull",
+        "D) git commit --amend"
+      ],
+      "answer": 2,
+      "explanation": "'git pull' = fetch + merge no branch atual."
+    },
+    {
+      "id": 21,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Secret scanning faz o quê?",
+      "options": [
+        "A) Detecta tokens/credenciais expostos",
+        "B) Criptografa variáveis",
+        "C) Assina releases",
+        "D) Cria backups"
+      ],
+      "answer": 0,
+      "explanation": "Identifica padrões de segredos e alerta."
+    },
+    {
+      "id": 22,
+      "topic": "Gestão de Projetos (7%)",
+      "q": "O que são milestones?",
+      "options": [
+        "A) Recurso só de repositórios privados",
+        "B) Templates de PR",
+        "C) Metas/entregas para agrupar issues e PRs",
+        "D) Runner do Actions"
+      ],
+      "answer": 2,
+      "explanation": "Milestones agrupam itens por meta/período."
+    }
+  ]
+}

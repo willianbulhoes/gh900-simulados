@@ -1,0 +1,292 @@
+{
+  "title": "Simulado GH-900 – Prova 18",
+  "duration_minutes": 90,
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Para que servem 'topics' em um repositório?",
+      "options": [
+        "A) Classificar e tornar o repositório mais descobrível",
+        "B) Habilitar builds automatizados",
+        "C) Definir proprietários de código",
+        "D) Controlar permissões"
+      ],
+      "answer": 0,
+      "explanation": "Topics ajudam na descoberta por temas/tecnologias."
+    },
+    {
+      "id": 2,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Qual opção descreve corretamente 'star', 'watch' e 'fork'?",
+      "options": [
+        "A) Star controla notificações; Watch adiciona licença; Fork cria release",
+        "B) Star favorito; Watch notificações; Fork cópia no perfil",
+        "C) Star cria cópia; Watch favorita; Fork envia commits",
+        "D) Star dá permissão de escrita; Watch cria branch; Fork cria issue"
+      ],
+      "answer": 1,
+      "explanation": "Star é favorito, Watch controla notificações, Fork cria uma cópia na sua conta."
+    },
+    {
+      "id": 3,
+      "topic": "Benefícios da Comunidade GitHub (10%)",
+      "q": "Diferença entre Discussions e Issues:",
+      "options": [
+        "A) Discussions substituem PRs",
+        "B) Discussions: ideação/Q&A; Issues: tarefas rastreáveis",
+        "C) Issues só em privados",
+        "D) Iguais"
+      ],
+      "answer": 1,
+      "explanation": "Discussions para conversas; Issues para tarefas."
+    },
+    {
+      "id": 4,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Desfazer último commit mantendo mudanças no staging: ",
+      "options": [
+        "A) git pull --rebase",
+        "B) git reset --soft HEAD~1",
+        "C) git rm --cached .",
+        "D) git revert HEAD"
+      ],
+      "answer": 1,
+      "explanation": "'reset --soft' remove o commit mantendo alterações no index."
+    },
+    {
+      "id": 5,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Trazer atualizações do remoto e integrar ao branch atual:",
+      "options": [
+        "A) git pull",
+        "B) git commit --amend",
+        "C) git tag",
+        "D) git stash pop"
+      ],
+      "answer": 0,
+      "explanation": "'git pull' = fetch + merge no branch atual."
+    },
+    {
+      "id": 6,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Qual recurso agrupa repositórios e usuários sob políticas e cobrança compartilhadas?",
+      "options": [
+        "A) Discussions",
+        "B) Organizações",
+        "C) Gists",
+        "D) Forks"
+      ],
+      "answer": 1,
+      "explanation": "Organizações agrupam repositórios e membros e aplicam políticas centralizadas."
+    },
+    {
+      "id": 7,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Definir permissões do GITHUB_TOKEN no workflow:",
+      "options": [
+        "A) Campo 'permissions:'",
+        "B) README.md",
+        "C) .gitignore",
+        "D) CODEOWNERS"
+      ],
+      "answer": 0,
+      "explanation": "'permissions:' ajusta escopos do token."
+    },
+    {
+      "id": 8,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Ação para cachear dependências:",
+      "options": [
+        "A) actions/checkout",
+        "B) actions/cache",
+        "C) actions/upload-artifact",
+        "D) actions/setup-node"
+      ],
+      "answer": 1,
+      "explanation": "'actions/cache' armazena dependências para acelerar builds."
+    },
+    {
+      "id": 9,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Em Enterprise, SAML/SSO é usado para:",
+      "options": [
+        "A) Desabilitar issues",
+        "B) Habilitar Pages",
+        "C) Centralizar autenticação via identidade corporativa",
+        "D) Criar releases"
+      ],
+      "answer": 2,
+      "explanation": "SSO/SAML controla acesso a organizações e recursos."
+    },
+    {
+      "id": 10,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Tag leve vs anotada: ",
+      "options": [
+        "A) Leve tem mensagem; anotada é ponteiro",
+        "B) Tags só no GitHub",
+        "C) Iguais",
+        "D) Anotada tem mensagem/autor/data; leve é ponteiro"
+      ],
+      "answer": 3,
+      "explanation": "Tags anotadas incluem metadados; leves são simples referências."
+    },
+    {
+      "id": 11,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Code scanning no GitHub identifica:",
+      "options": [
+        "A) Vulnerabilidades no código (ex.: CodeQL)",
+        "B) Formatação de Markdown",
+        "C) Erros de merge",
+        "D) Licenças incompatíveis"
+      ],
+      "answer": 0,
+      "explanation": "Code scanning detecta falhas e antipadrões de segurança."
+    },
+    {
+      "id": 12,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Gerenciadores suportados pelo GitHub Packages:",
+      "options": [
+        "A) npm (entre outros)",
+        "B) pip",
+        "C) composer",
+        "D) cargo"
+      ],
+      "answer": 0,
+      "explanation": "Packages suporta npm, Maven, NuGet, RubyGems e Docker/OCI, entre outros."
+    },
+    {
+      "id": 13,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "O que são status checks?",
+      "options": [
+        "A) Tipo de branch protegido",
+        "B) Resultados de CI/validações que precisam passar",
+        "C) Notificações",
+        "D) Lista de issues vinculadas"
+      ],
+      "answer": 1,
+      "explanation": "Checks refletem testes/linters/builds e podem ser obrigatórios."
+    },
+    {
+      "id": 14,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Em Git, o que é HEAD?",
+      "options": [
+        "A) Tag de release",
+        "B) Aponta para o commit/branch atual",
+        "C) Arquivo de licença",
+        "D) Hook de pré-commit"
+      ],
+      "answer": 1,
+      "explanation": "HEAD referencia o commit/branch atual."
+    },
+    {
+      "id": 15,
+      "topic": "Gestão de Projetos (7%)",
+      "q": "O que são milestones?",
+      "options": [
+        "A) Runner do Actions",
+        "B) Templates de PR",
+        "C) Recurso só de repositórios privados",
+        "D) Metas/entregas para agrupar issues e PRs"
+      ],
+      "answer": 3,
+      "explanation": "Milestones agrupam itens por meta/período."
+    },
+    {
+      "id": 16,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Para documentar como reportar vulnerabilidades, use:",
+      "options": [
+        "A) README.md",
+        "B) SECURITY.md",
+        "C) CODEOWNERS",
+        "D) DOCKERFILE"
+      ],
+      "answer": 1,
+      "explanation": "SECURITY.md traz diretrizes de reporte responsável."
+    },
+    {
+      "id": 17,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Evento que aciona workflow ao abrir/atualizar PR:",
+      "options": [
+        "A) schedule",
+        "B) workflow_dispatch",
+        "C) push",
+        "D) pull_request"
+      ],
+      "answer": 3,
+      "explanation": "'pull_request' dispara em atividades de PR."
+    },
+    {
+      "id": 18,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Secret scanning faz o quê?",
+      "options": [
+        "A) Assina releases",
+        "B) Detecta tokens/credenciais expostos",
+        "C) Criptografa variáveis",
+        "D) Cria backups"
+      ],
+      "answer": 1,
+      "explanation": "Identifica padrões de segredos e alerta."
+    },
+    {
+      "id": 19,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Dependabot security updates:",
+      "options": [
+        "A) Tag protegida",
+        "B) PRs automáticos sugerindo atualização segura",
+        "C) Relatório de licenças",
+        "D) Webhook"
+      ],
+      "answer": 1,
+      "explanation": "Dependabot abre PRs para atualizar dependências vulneráveis."
+    },
+    {
+      "id": 20,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Onde colocar Issue Forms (templates YAML)?",
+      "options": [
+        "A) docs/",
+        "B) .github/ISSUE_TEMPLATE/",
+        "C) scripts/",
+        "D) .github/PULL_REQUEST_TEMPLATE/"
+      ],
+      "answer": 1,
+      "explanation": "Issue Forms ficam em .github/ISSUE_TEMPLATE/."
+    },
+    {
+      "id": 21,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Merge vs rebase:",
+      "options": [
+        "A) Merge só funciona em repositórios privados",
+        "B) Merge reescreve; rebase sempre cria merge commit",
+        "C) Merge apaga commits; rebase cria tags",
+        "D) Merge preserva histórico; rebase reescreve para linearizar"
+      ],
+      "answer": 3,
+      "explanation": "Merge integra historicamente; rebase reaplica commits criando histórico linear."
+    },
+    {
+      "id": 22,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Autenticar para publicar/instalar pacotes:",
+      "options": [
+        "A) Senha em texto plano",
+        "B) Cookies",
+        "C) SSH sem chave",
+        "D) GITHUB_TOKEN ou PAT com escopos"
+      ],
+      "answer": 3,
+      "explanation": "Autenticação via GITHUB_TOKEN (Actions) ou PAT (packages, read:packages)."
+    }
+  ]
+}

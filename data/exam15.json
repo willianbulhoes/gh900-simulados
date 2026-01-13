@@ -1,0 +1,292 @@
+{
+  "title": "Simulado GH-900 – Prova 15",
+  "duration_minutes": 90,
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Tag leve vs anotada: ",
+      "options": [
+        "A) Anotada tem mensagem/autor/data; leve é ponteiro",
+        "B) Tags só no GitHub",
+        "C) Iguais",
+        "D) Leve tem mensagem; anotada é ponteiro"
+      ],
+      "answer": 0,
+      "explanation": "Tags anotadas incluem metadados; leves são simples referências."
+    },
+    {
+      "id": 2,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Onde documentar diretrizes de contribuição (PRs, padrões de código)?",
+      "options": [
+        "A) README.md",
+        "B) CONTRIBUTING.md",
+        "C) LICENSE",
+        "D) SECURITY.md"
+      ],
+      "answer": 1,
+      "explanation": "CONTRIBUTING.md descreve como contribuir, abrir issues/PRs e padrões."
+    },
+    {
+      "id": 3,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Boa prática para mensagens de commit: ",
+      "options": [
+        "A) Evitar descrição",
+        "B) Incluir arquivos binários",
+        "C) Usar voz imperativa, claro e conciso",
+        "D) Apenas emojis"
+      ],
+      "answer": 2,
+      "explanation": "Mensagens curtas e imperativas facilitam revisão e histórico."
+    },
+    {
+      "id": 4,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "O que são status checks?",
+      "options": [
+        "A) Notificações",
+        "B) Lista de issues vinculadas",
+        "C) Tipo de branch protegido",
+        "D) Resultados de CI/validações que precisam passar"
+      ],
+      "answer": 3,
+      "explanation": "Checks refletem testes/linters/builds e podem ser obrigatórios."
+    },
+    {
+      "id": 5,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "O que são Dependabot alerts?",
+      "options": [
+        "A) Mensagens de commit assinadas",
+        "B) Falhas de runners",
+        "C) Alertas de vulnerabilidades em dependências",
+        "D) Notificações de merges"
+      ],
+      "answer": 2,
+      "explanation": "Alertas detectam dependências vulneráveis com CVEs e sugerem versões."
+    },
+    {
+      "id": 6,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Para que serve um 'template repository'?",
+      "options": [
+        "A) Proteger branches contra force-push",
+        "B) Configurar webhooks automaticamente",
+        "C) Guardar binários de build",
+        "D) Criar novos repositórios com a mesma estrutura"
+      ],
+      "answer": 3,
+      "explanation": "Templates permitem iniciar novos repositórios reutilizando estrutura e arquivos."
+    },
+    {
+      "id": 7,
+      "topic": "Recursos de colaboração (30%)",
+      "q": "Sequência típica do GitHub Flow:",
+      "options": [
+        "A) Criar tag → discussion → merge",
+        "B) Branch → commits → PR → checagens → merge → deploy",
+        "C) Commits na main → deploy → issue",
+        "D) Release → fork → merge"
+      ],
+      "answer": 1,
+      "explanation": "Fluxo: branch temático, PR com revisão/CI, merge e deploy contínuo."
+    },
+    {
+      "id": 8,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Git LFS serve para:",
+      "options": [
+        "A) Rastrear arquivos grandes via ponteiros",
+        "B) Criar releases",
+        "C) Apagar histórico",
+        "D) Comprimir todos os arquivos"
+      ],
+      "answer": 0,
+      "explanation": "Git LFS mantém ponteiros no Git e armazena binários fora."
+    },
+    {
+      "id": 9,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Onde ficam os arquivos de workflow do GitHub Actions?",
+      "options": [
+        "A) .github/workflows/",
+        "B) github/actions/",
+        "C) ci/workflows/",
+        "D) actions/workflows/"
+      ],
+      "answer": 0,
+      "explanation": "Workflows YAML ficam em .github/workflows/."
+    },
+    {
+      "id": 10,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Onde colocar Issue Forms (templates YAML)?",
+      "options": [
+        "A) docs/",
+        "B) .github/ISSUE_TEMPLATE/",
+        "C) scripts/",
+        "D) .github/PULL_REQUEST_TEMPLATE/"
+      ],
+      "answer": 1,
+      "explanation": "Issue Forms ficam em .github/ISSUE_TEMPLATE/."
+    },
+    {
+      "id": 11,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Acessar secret MY_TOKEN em workflow:",
+      "options": [
+        "A) ${{ github.token }}",
+        "B) ${{ secrets.MY_TOKEN }}",
+        "C) ${{ env.MY_TOKEN }}",
+        "D) ${{ vars.MY_TOKEN }}"
+      ],
+      "answer": 1,
+      "explanation": "Secrets estão no contexto 'secrets'."
+    },
+    {
+      "id": 12,
+      "topic": "Gestão de Projetos (7%)",
+      "q": "GitHub Projects é usado para:",
+      "options": [
+        "A) Gerenciar licenças",
+        "B) Planejamento e rastreamento de trabalho",
+        "C) Rodar builds",
+        "D) Hospedar sites"
+      ],
+      "answer": 1,
+      "explanation": "Projects: boards, tabelas, campos personalizados."
+    },
+    {
+      "id": 13,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Secret scanning faz o quê?",
+      "options": [
+        "A) Assina releases",
+        "B) Criptografa variáveis",
+        "C) Cria backups",
+        "D) Detecta tokens/credenciais expostos"
+      ],
+      "answer": 3,
+      "explanation": "Identifica padrões de segredos e alerta."
+    },
+    {
+      "id": 14,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Para que servem 'topics' em um repositório?",
+      "options": [
+        "A) Controlar permissões",
+        "B) Habilitar builds automatizados",
+        "C) Classificar e tornar o repositório mais descobrível",
+        "D) Definir proprietários de código"
+      ],
+      "answer": 2,
+      "explanation": "Topics ajudam na descoberta por temas/tecnologias."
+    },
+    {
+      "id": 15,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "GitHub Pages serve para:",
+      "options": [
+        "A) Gerenciar permissões de organização",
+        "B) Hospedar sites estáticos do repositório",
+        "C) Criar containers",
+        "D) Executar CI"
+      ],
+      "answer": 1,
+      "explanation": "Pages publica conteúdo estático (HTML/JS/CSS)."
+    },
+    {
+      "id": 16,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Gerenciadores suportados pelo GitHub Packages:",
+      "options": [
+        "A) composer",
+        "B) pip",
+        "C) npm (entre outros)",
+        "D) cargo"
+      ],
+      "answer": 2,
+      "explanation": "Packages suporta npm, Maven, NuGet, RubyGems e Docker/OCI, entre outros."
+    },
+    {
+      "id": 17,
+      "topic": "Introdução ao Git e GitHub (22%)",
+      "q": "Em Git, o que é HEAD?",
+      "options": [
+        "A) Hook de pré-commit",
+        "B) Aponta para o commit/branch atual",
+        "C) Arquivo de licença",
+        "D) Tag de release"
+      ],
+      "answer": 1,
+      "explanation": "HEAD referencia o commit/branch atual."
+    },
+    {
+      "id": 18,
+      "topic": "Privacidade, Segurança e Administração (10%)",
+      "q": "Princípio recomendado para permissões:",
+      "options": [
+        "A) Permissões só para forks",
+        "B) Permissão total para todos",
+        "C) Desabilitar autenticação",
+        "D) Menor privilégio necessário"
+      ],
+      "answer": 3,
+      "explanation": "Conceder apenas o mínimo necessário reduz riscos."
+    },
+    {
+      "id": 19,
+      "topic": "Benefícios da Comunidade GitHub (10%)",
+      "q": "Diferença entre Discussions e Issues:",
+      "options": [
+        "A) Discussions substituem PRs",
+        "B) Iguais",
+        "C) Issues só em privados",
+        "D) Discussions: ideação/Q&A; Issues: tarefas rastreáveis"
+      ],
+      "answer": 3,
+      "explanation": "Discussions para conversas; Issues para tarefas."
+    },
+    {
+      "id": 20,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "Evento para acionar manualmente workflow com inputs:",
+      "options": [
+        "A) release",
+        "B) push",
+        "C) workflow_dispatch",
+        "D) repository_dispatch"
+      ],
+      "answer": 2,
+      "explanation": "'workflow_dispatch' cria botão e inputs."
+    },
+    {
+      "id": 21,
+      "topic": "Desenvolvimento Moderno (13%)",
+      "q": "GitHub Apps vs OAuth Apps, principal diferença:",
+      "options": [
+        "A) Sem diferenças",
+        "B) OAuth Apps suportam webhooks; GitHub Apps não",
+        "C) GitHub Apps têm permissões granulares/tokens de instalação; OAuth Apps atuam em nome do usuário",
+        "D) GitHub Apps só em privados"
+      ],
+      "answer": 2,
+      "explanation": "GitHub Apps usam permissões por recurso e tokens de instalação; OAuth Apps usam escopos do usuário."
+    },
+    {
+      "id": 22,
+      "topic": "Trabalhando com repositórios GitHub (8%)",
+      "q": "Onde você altera o 'default branch' no GitHub?",
+      "options": [
+        "A) Actions → Runners",
+        "B) Pull Requests → Merge settings",
+        "C) Settings → Branches",
+        "D) Insights → Community"
+      ],
+      "answer": 2,
+      "explanation": "O branch padrão é configurado em Settings → Branches."
+    }
+  ]
+}
